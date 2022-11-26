@@ -14,12 +14,12 @@ function Header() {
         <Logo />
         <Search />
         <Currency />
-        <Cart />
       </div>
       <div className="lower-header">
         <Shop />
         <Pc />
         <Ps />
+        <Cart />
       </div>
     </header>
   );
