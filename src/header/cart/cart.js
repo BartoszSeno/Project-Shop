@@ -1,7 +1,7 @@
 function Cart() {
   return (
     <div className="cart">
-      <div className="test-cart">0 | PLN</div>
+      <div>0 | PLN</div>
     </div>
   );
 }

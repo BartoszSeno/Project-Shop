@@ -1,0 +1,166 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.home-main {
+  background-color: palevioletred;
+  width: 70%;
+  height: 1000px; /* % */
+  display: flex;
+}
+
+.baner-container {
+  background-color: aqua;
+  width: 1901px;
+  height: 375px;
+  margin-top: 160px;
+  display: flex;
+}
+
+.main-img {
+  background-color: yellow;
+  height: 100%;
+  width: 58%;
+  background-image: url("../image/baner.png");
+  background-repeat: no-repeat;
+  background-size: 1150px;
+  z-index: 100;
+  -webkit-box-shadow: 24px 0px 27px -18px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 24px 0px 27px -18px rgba(0, 0, 0, 1);
+  box-shadow: 24px 0px 27px -18px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.game-img {
+  height: 100%;
+  width: 14%;
+  -webkit-box-shadow: 24px 0px 27px -18px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 24px 0px 27px -18px rgba(0, 0, 0, 1);
+  box-shadow: 24px 0px 27px -18px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+.game-one {
+  z-index: 90;
+  background-image: url("../image/daysgone.jpg");
+  background-size: 290px;
+  background-position-x: -12px;
+}
+
+.game-two {
+  z-index: 80;
+  background-image: url("../image/horizon.png");
+  background-size: 400px;
+  background-position-x: -65px;
+}
+
+.game-three {
+  z-index: 70;
+  background-image: url("../image/spider.jpg");
+  background-size: 290px;
+  background-position-x: -20px;
+}
+
+.game-img:hover {
+  z-index: 101;
+  -webkit-box-shadow: inset 6px 5px 100px 12px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 6px 5px 100px 12px rgba(0, 0, 0, 1);
+  box-shadow: inset 6px 5px 100px 12px rgba(0, 0, 0, 1);
+}
+
+.home-header-container {
+  background-color: #393074;
+  -webkit-box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
+  z-index: 110;
+}
+
+.form-h-h {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.search-home,
+.price,
+.country-s {
+  background-color: transparent;
+  border: 2px solid #282140;
+  height: 40px;
+  width: 200px;
+  display: flex;
+  margin: 15px;
+  margin-top: 30px;
+  -webkit-box-shadow: inset 0px 0px 28px -11px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0px 0px 28px -11px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px 0px 28px -11px rgba(0, 0, 0, 1);
+  font-size: 26px;
+  color: white;
+}
+
+.search-home:hover,
+.price:hover {
+  -webkit-box-shadow: inset 0px 0px 100px -57px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0px 0px 100px -57px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px 0px 100px -57px rgba(0, 0, 0, 1);
+}
+
+.price-c {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.betwen-price {
+  font-size: 30px;
+  color: white;
+  display: flex;
+}
+
+.price {
+  height: 40px;
+  width: 76px;
+  display: flex;
+  flex-direction: row;
+}
+
+option {
+  background-color: #282140;
+  height: 40px;
+  width: 200px;
+  font-size: 26px;
+  border: 0px;
+  outline: none;
+}
+
+.form-h-l {
+  color: white;
+  font-size: 25px;
+  margin-bottom: -20px;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  width: 80%;
+  height: 40px;
+}

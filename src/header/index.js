@@ -6,20 +6,31 @@ import Cart from "./cart/cart";
 import Shop from "./shop/shop";
 import Pc from "./pc/pc";
 import Ps from "./ps/ps";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="main-header">
       <div className="upper-header">
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
         <Search />
         <Currency />
       </div>
       <div className="lower-header">
-        <Shop />
-        <Pc />
-        <Ps />
-        <Cart />
+        <Link to="/Shop">
+          <Shop />
+        </Link>
+        <Link to="/Pc">
+          <Pc />
+        </Link>
+        <Link to="/PS">
+          <Ps />
+        </Link>
+        <Link to="/Cart" className="cart-container">
+          <Cart />
+        </Link>
       </div>
     </header>
   );

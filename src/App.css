@@ -4,7 +4,7 @@ body {
   background-color: #2e2759;
 }
 
-.App {
+#root {
   display: flex;
   justify-content: center;
 }

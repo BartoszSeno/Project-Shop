@@ -5,7 +5,7 @@
   flex-direction: column;
   z-index: 1000;
   width: 70%;
-  height: 170px;
+  height: 160px;
 }
 
 .upper-header {
@@ -35,13 +35,6 @@
 .currency {
   color: white;
   font-size: 25px;
-}
-
-.cart {
-  color: white;
-  font-size: 25px;
-  position: absolute;
-  width: 90%;
 }
 
 .test-cart {
@@ -93,7 +86,7 @@
   left: 0;
   bottom: 0;
   width: 0;
-  border-bottom: solid 2px #fd1f4a;
+  border-bottom: solid 4px #fd1f4a;
   animation: border_anim 0.3s linear forwards;
 }
 
@@ -104,4 +97,30 @@
   100% {
     width: 100%;
   }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cart-container {
+  position: absolute;
+  width: 90%;
+  height: 0px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.cart {
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
