@@ -8,14 +8,13 @@
 }
 
 .home-main {
-  background-color: palevioletred;
   width: 70%;
   height: 1000px; /* % */
   display: flex;
+  justify-content: center;
 }
 
 .baner-container {
-  background-color: aqua;
   width: 1901px;
   height: 375px;
   margin-top: 160px;
@@ -23,7 +22,6 @@
 }
 
 .main-img {
-  background-color: yellow;
   height: 100%;
   width: 58%;
   background-image: url("../image/baner.png");
@@ -75,92 +73,85 @@
   box-shadow: inset 6px 5px 100px 12px rgba(0, 0, 0, 1);
 }
 
-.home-header-container {
-  background-color: #393074;
-  -webkit-box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
-  box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
-  z-index: 110;
-}
+/* for you */
 
-.form-h-h {
+.f-y-container {
+  width: 100%;
+  height: 600px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
-textarea:focus,
-input:focus,
-select:focus {
-  outline: none;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.search-home,
-.price,
-.country-s {
-  background-color: transparent;
-  border: 2px solid #282140;
-  height: 40px;
-  width: 200px;
-  display: flex;
-  margin: 15px;
-  margin-top: 30px;
-  -webkit-box-shadow: inset 0px 0px 28px -11px rgba(0, 0, 0, 1);
-  -moz-box-shadow: inset 0px 0px 28px -11px rgba(0, 0, 0, 1);
-  box-shadow: inset 0px 0px 28px -11px rgba(0, 0, 0, 1);
-  font-size: 26px;
+.f-y-title {
   color: white;
+  font-size: 40px;
+  height: 50px;
+  margin-top: 50px;
 }
 
-.search-home:hover,
-.price:hover {
-  -webkit-box-shadow: inset 0px 0px 100px -57px rgba(0, 0, 0, 1);
-  -moz-box-shadow: inset 0px 0px 100px -57px rgba(0, 0, 0, 1);
-  box-shadow: inset 0px 0px 100px -57px rgba(0, 0, 0, 1);
-}
-
-.price-c {
+.game-show-list {
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  justify-content: space-around;
 }
 
-.betwen-price {
+/* show game best price */
+
+.game-container {
+  background-color: #26165e;
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  width: 250px;
+}
+
+.img-test {
+  height: 68%;
+  width: 100%;
+}
+
+.f-u-title {
+  width: 90%;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+  margin-top: 12px;
+  margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.f-u-country {
+  width: 90%;
+  height: 17px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 5px;
+  color: rgb(0, 189, 57);
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.f-u-from {
+  width: 90%;
+  height: 17px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 7px;
+  margin-left: 10px;
+  color: gray;
+}
+
+.f-u-price {
+  width: 90%;
+  height: 17px;
+  font-weight: 600;
   font-size: 30px;
+  margin-top: -5px;
+  margin-left: 10px;
   color: white;
-  display: flex;
-}
-
-.price {
-  height: 40px;
-  width: 76px;
-  display: flex;
-  flex-direction: row;
-}
-
-option {
-  background-color: #282140;
-  height: 40px;
-  width: 200px;
-  font-size: 26px;
-  border: 0px;
-  outline: none;
-}
-
-.form-h-l {
-  color: white;
-  font-size: 25px;
-  margin-bottom: -20px;
-  padding: 0;
-  display: flex;
-  align-items: flex-end;
-  width: 80%;
-  height: 40px;
 }

@@ -1,4 +1,4 @@
-function HomeHeader() {
+function ShopHeader() {
   return (
     <>
       <div className="home-header-container">
@@ -33,4 +33,4 @@ function HomeHeader() {
   );
 }
 
-export default HomeHeader;
+export default ShopHeader;

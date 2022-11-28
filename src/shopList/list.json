@@ -1,10 +1,39 @@
 {
-  "gamelist": [
+  "gamesList": [
     {
       "id": 1,
-      "gamename": "Grand Theft Auto V",
-      "country": "EUROPE",
-      "price": "19,98 €"
+      "gamename": "Black Desert Online Official Website Key GLOBAL",
+      "price": "7,07",
+      "country": "Global",
+      "url": "black-desrt-online"
+    },
+    {
+      "id": 2,
+      "gamename": "Cyberpunk 2077 GOG Key EUROPE",
+      "price": "47,99",
+      "country": "Europe",
+      "url": "Cyberpunk"
+    },
+    {
+      "id": 3,
+      "gamename": "Days Gone Steam Key GLOBAL",
+      "price": "9,80",
+      "country": "Global",
+      "url": "Days-Gone"
+    },
+    {
+      "id": 4,
+      "gamename": "Horizon: Forbidden West (PS4/PS5) PSN KEY EUROPE",
+      "price": "33,91",
+      "country": "Europe",
+      "url": "Horizon"
+    },
+    {
+      "id": 5,
+      "gamename": "Marvel’s Spider-Man: Miles Morales (PC) Steam Key GLOBAL",
+      "price": "36,86",
+      "country": "Global",
+      "url": "Spider-Man"
     }
   ]
 }

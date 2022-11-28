@@ -1,14 +1,14 @@
 import "../assets/home.css";
 import Baner from "./baner/baner";
-import HomeHeader from "./homeHeader/header";
+import ForYou from "./forYou/foryou";
 
-function Home() {
+function Home({ saveItem }) {
   return (
     <>
       <div className="home-container">
         <Baner />
         <div className="home-main">
-          <HomeHeader />
+          <ForYou saveItem={saveItem} />
         </div>
       </div>
     </>
