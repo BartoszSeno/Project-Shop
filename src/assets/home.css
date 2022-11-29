@@ -8,8 +8,8 @@
 }
 
 .home-main {
-  width: 70%;
-  height: 1000px; /* % */
+  width: 1340px;
+  height: 1000px;
   display: flex;
   justify-content: center;
 }
@@ -88,6 +88,7 @@
   font-size: 40px;
   height: 50px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .game-show-list {
@@ -111,7 +112,9 @@
 
 .img-test {
   height: 68%;
+
   width: 100%;
+  background-size: 200px;
 }
 
 .f-u-title {
@@ -154,4 +157,10 @@
   margin-top: -5px;
   margin-left: 10px;
   color: white;
+}
+
+.dsfdsa {
+  margin-top: 500px;
+  height: 50px;
+  width: 50px;
 }

@@ -5,43 +5,49 @@ import Pc from "./header/pc/pc";
 import Cart from "./header/cart/cart";
 import Home from "./home";
 import ShopMain from "./shop";
-import Test from "./test/test";
 import { useState } from "react";
 import { useEffect } from "react";
 import apiRequest from "./assets/apiRequest";
+import GameLoopPage from "./GameLoopPage/GameLoopPage";
 
 function App() {
   const API_URL = "http://localhost:3600/gamesList";
 
-  const [saveItem, setsaveItem] = useState([]);
+  const [Items, setItems] = useState([]);
+  const [newItem, setnewItem] = useState("");
 
   const addItem = async (name) => {
-    const id = saveItem.length ? saveItem[saveItem.length - 1].id + 1 : 1;
-    const myNewItem = { id, name };
-    const ItemList = [...saveItem, myNewItem];
-    setsaveItem(ItemList);
+    const id = Items.length ? Items[Items.length - 1].id + 1 : 1;
+    const myNewItems = { id, name };
+    const listItems = [...Items, myNewItems];
+    setItems(listItems);
 
     const postOptions = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(myNewItem),
+      body: JSON.stringify(myNewItems),
     };
     const result = await apiRequest(API_URL, postOptions);
   };
 
+  const handleDelete = async (id) => {
+    const listItems = Items.filter((name) => name.id === id);
+    setItems(listItems);
+  };
+
   useEffect(() => {
-    const fetchsaveItem = async () => {
+    const fetchItems = async () => {
       try {
         const response = await fetch(API_URL);
         if (!response.ok);
-        const ItemList = await response.json();
-        setsaveItem(ItemList);
+        const listItems = await response.json();
+        setItems(listItems);
       } catch (err) {}
     };
 
-    setTimeout(() => fetchsaveItem(), 0);
+    setTimeout(() => fetchItems(), 0);
   }, []);
 
   return (
@@ -49,15 +55,18 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home saveItem={saveItem} />}></Route>
+          <Route
+            path="/"
+            element={<Home Items={Items} handleDelete={handleDelete} />}
+          ></Route>
           <Route path="/Cart" element={<Cart />}></Route>
           <Route path="/Shop" element={<ShopMain />}></Route>
           <Route path="/Pc" element={<Pc />}></Route>
           <Route path="/Ps" element={<Ps />}></Route>
-          {saveItem.map((item) => (
+          {Items.map((item) => (
             <Route
               path={item.url}
-              element={<Test saveItem={saveItem} />}
+              element={<GameLoopPage Items={Items} />}
             ></Route>
           ))}
         </Routes>

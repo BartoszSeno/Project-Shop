@@ -7,12 +7,21 @@ import Shop from "./shop/shop";
 import Pc from "./pc/pc";
 import Ps from "./ps/ps";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function Header() {
+  const refresh = async () => {
+    setTimeout(() => {
+      window.location.reload();
+    }, 50);
+  };
+
+  useEffect(() => {}, []);
+
   return (
     <header className="main-header">
       <div className="upper-header">
-        <Link to="/">
+        <Link to="/" onClick={refresh}>
           <Logo />
         </Link>
         <Search />

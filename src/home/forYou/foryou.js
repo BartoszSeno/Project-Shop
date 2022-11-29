@@ -1,6 +1,6 @@
 import ShowGame from "./showGames/showgame";
 
-function ForYou({ saveItem }) {
+function ForYou({ Items, handleDelete }) {
   return (
     <>
       <div className="f-y-container">
@@ -8,7 +8,7 @@ function ForYou({ saveItem }) {
           Video games for Computer & PlayStation - best prices on ZERO!
         </span>
         <div className="game-show-list">
-          <ShowGame saveItem={saveItem} />
+          <ShowGame Items={Items} handleDelete={handleDelete} />
         </div>
       </div>
     </>
