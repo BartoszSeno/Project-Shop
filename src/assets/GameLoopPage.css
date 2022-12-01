@@ -28,7 +28,38 @@
 
 .img-g-l-main img {
   height: 500px;
-  border: 1px solid black;
+  max-width: 95%;
+  border: 1.5px solid;
+  border-image: linear-gradient(
+      var(--angle),
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      #dd0004,
+      #dd0004,
+      #dd0004,
+      #dd0004,
+      #dd0004,
+      #dd0004
+    )
+    1;
+  animation: 5s rotate linear infinite;
 }
 
 .text-g-l {
@@ -67,7 +98,7 @@
   color: white;
 }
 
-.country-c {
+.g-s {
 }
 
 .c-d,

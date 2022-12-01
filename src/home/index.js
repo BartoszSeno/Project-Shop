@@ -2,15 +2,20 @@ import "../assets/home.css";
 import Baner from "./baner/baner";
 import ForYou from "./forYou/foryou";
 
-function Home({ Items, handleDelete }) {
+function Home({ Items, handleDelete, addClass, setaddClass }) {
   return (
     <>
-      <div className="home-container">
+      <main className="home-container">
         <Baner />
         <div className="home-main">
-          <ForYou Items={Items} handleDelete={handleDelete} />
+          <ForYou
+            Items={Items}
+            handleDelete={handleDelete}
+            addClass={addClass}
+            setaddClass={setaddClass}
+          />
         </div>
-      </div>
+      </main>
     </>
   );
 }

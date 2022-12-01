@@ -1,7 +1,7 @@
 function ShopHeader() {
   return (
     <>
-      <div className="home-header-container">
+      <header className="home-header-container">
         <form className="form-h-h">
           <input type="text" className="search-home" />
           <label htmlFor="price" className="form-h-l">
@@ -28,7 +28,7 @@ function ShopHeader() {
             <option value="Asia">Asia</option>
           </select>
         </form>
-      </div>
+      </header>
     </>
   );
 }

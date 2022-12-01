@@ -32,6 +32,37 @@
   -moz-box-shadow: 24px 0px 27px -18px rgba(0, 0, 0, 1);
   box-shadow: 24px 0px 27px -18px rgba(0, 0, 0, 1);
   cursor: pointer;
+  border: 1.5px solid;
+  border-image: linear-gradient(
+      var(--angle),
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      white,
+      white
+    )
+    1;
+  animation: 10s rotate linear infinite;
 }
 
 .game-img {
@@ -103,11 +134,56 @@
 /* show game best price */
 
 .game-container {
-  background-color: #26165e;
+  background-color: #1a212b;
   display: flex;
   flex-direction: column;
   height: 420px;
   width: 250px;
+  border: 1px solid black;
+}
+
+.random-shade {
+  background-color: #1a212b;
+  height: 420px;
+  width: 250px;
+  border: 1.5px solid;
+  border-image: linear-gradient(
+      var(--angle),
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      #dd0004,
+      #dd0004,
+      #dd0004,
+      #dd0004,
+      #dd0004,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black,
+      black
+    )
+    1;
+  animation: 4s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 .img-test {

@@ -14,7 +14,8 @@ function App() {
   const API_URL = "http://localhost:3600/gamesList";
 
   const [Items, setItems] = useState([]);
-  const [newItem, setnewItem] = useState("");
+
+  const [addClass, setaddClass] = useState(false);
 
   const addItem = async (name) => {
     const id = Items.length ? Items[Items.length - 1].id + 1 : 1;
@@ -35,6 +36,38 @@ function App() {
   const handleDelete = async (id) => {
     const listItems = Items.filter((name) => name.id === id);
     setItems(listItems);
+    /*
+    function StartLoop() {
+      function randomMain(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      setTimeout(() => {
+        console.log("main loop");
+        setaddClass(true);
+      }, randomMain(10000, 100000));
+    }
+
+    function EndoLoop() {
+      function randomSecound(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      setTimeout(() => {
+        console.log("main loop");
+        setaddClass(false);
+      }, randomSecound(1000, 5000));
+    }
+
+    if (addClass === false) {
+      StartLoop();
+    } else {
+    }
+
+    if (addClass === true) {
+      EndoLoop();
+    } else {
+    }
+    console.log("test");
+    */
   };
 
   useEffect(() => {
@@ -57,7 +90,14 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Home Items={Items} handleDelete={handleDelete} />}
+            element={
+              <Home
+                Items={Items}
+                handleDelete={handleDelete}
+                addClass={addClass}
+                setaddClass={setaddClass}
+              />
+            }
           ></Route>
           <Route path="/Cart" element={<Cart />}></Route>
           <Route path="/Shop" element={<ShopMain />}></Route>

@@ -21,25 +21,29 @@ function Header() {
   return (
     <header className="main-header">
       <div className="upper-header">
-        <Link to="/" onClick={refresh}>
-          <Logo />
-        </Link>
-        <Search />
-        <Currency />
+        <div className="u-h-c">
+          <Link to="/" onClick={refresh}>
+            <Logo />
+          </Link>
+          <Search />
+          <Currency />
+        </div>
       </div>
       <div className="lower-header">
-        <Link to="/Shop">
-          <Shop />
-        </Link>
-        <Link to="/Pc">
-          <Pc />
-        </Link>
-        <Link to="/PS">
-          <Ps />
-        </Link>
-        <Link to="/Cart" className="cart-container">
-          <Cart />
-        </Link>
+        <div className="l-h-c">
+          <Link to="/Shop">
+            <Shop />
+          </Link>
+          <Link to="/Pc">
+            <Pc />
+          </Link>
+          <Link to="/PS">
+            <Ps />
+          </Link>
+          <Link to="/Cart" className="cart-container">
+            <Cart />
+          </Link>
+        </div>
       </div>
     </header>
   );

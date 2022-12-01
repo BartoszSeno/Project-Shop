@@ -1,7 +1,7 @@
 function Pc() {
   return (
     <div className="pc">
-      <div>Computer Games</div>
+      <p>Computer Games</p>
     </div>
   );
 }

@@ -1,10 +1,17 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #2e2759;
+  background-color: #1d1f20;
 }
 
 #root {
   display: flex;
   justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+@font-face {
+  font-family: FontTango;
+  src: url(assets/font/TangoSans_Italic.ttf);
 }

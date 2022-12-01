@@ -1,7 +1,7 @@
 function Ps() {
   return (
     <div className="ps">
-      <div>PlayStation Store</div>
+      <p>PlayStation Store</p>
     </div>
   );
 }
