@@ -1,5 +1,4 @@
 .game-loop-page-container {
-  height: 1000px;
   width: 100%;
   margin-top: 200px;
   display: flex;
@@ -8,16 +7,15 @@
 
 .main-g-l {
   width: 1340px;
-  height: 100%;
   display: flex;
+  height: 10px;
   flex-direction: row;
 }
 
 .img-g-l-container {
   height: 500px;
-  width: 500px;
+  width: 1000px;
   display: flex;
-  flex-direction: column;
 }
 .img-g-l-main {
   height: 500px;
@@ -61,27 +59,31 @@
     1;
   animation: 5s rotate linear infinite;
 }
+.game-title {
+  height: 100px;
+  width: 800px;
+  display: flex;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 20px;
+}
 
 .text-g-l {
   height: auto;
   width: 500px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .g-s-c {
   display: flex;
-  flex-direction: column;
-  background-color: #26165e;
   width: 100%;
   height: 700px;
   font-size: 40px;
   padding-left: 30px;
   padding-top: 50px;
   color: white;
-  -webkit-box-shadow: 0px 0px 27px -6px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 0px 27px -6px rgba(0, 0, 0, 1);
-  box-shadow: 0px 0px 27px -6px rgba(0, 0, 0, 1);
 }
 
 .description {
@@ -98,7 +100,19 @@
   color: white;
 }
 
-.g-s {
+.info-g-l {
+  width: 1460px;
+  height: 580px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.country-c,
+.platform-c {
+  height: 200px;
+  width: 200px;
 }
 
 .c-d,
@@ -122,24 +136,22 @@
 }
 
 .buy-s {
-  margin-top: 50px;
-  margin-left: 100px;
-  background-color: #393074;
-  width: 500px;
+  position: absolute;
+  margin-top: 420px;
+  margin-left: 960px;
+  width: 300px;
   height: 300px;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  -webkit-box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
-  box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
-  border: 1px solid black;
+  flex-direction: column;
 }
 
 .price-c {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   height: 150px;
+  margin-bottom: -20px;
+  margin-left: 22px;
 }
 
 .price-t {
@@ -162,11 +174,23 @@
 }
 
 .b-b {
+  border: 1.5px solid black;
+  color: white;
   height: 80px;
   width: 260px;
-  background-color: goldenrod;
+  background-color: #0073e7;
   cursor: pointer;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  border-image: linear-gradient(var(--angle), white, black, black, black, white)
+    1;
+  animation: 5s rotate linear infinite;
+  transition: 0.3s;
+}
+
+.b-b:hover {
+  transform: scale(1.05);
+  border: 1.5px solid white;
+  transition: 0.3s;
 }

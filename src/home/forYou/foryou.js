@@ -5,7 +5,7 @@ function ForYou({ Items, handleDelete, addClass, setaddClass }) {
     <>
       <div className="f-y-container">
         <p className="f-y-title">
-          Video games for Computer & PlayStation - best prices on ZERO!
+          Video games for Computer and PlayStation - best prices on ZERO!
         </p>
         <div className="game-show-list">
           <ShowGame

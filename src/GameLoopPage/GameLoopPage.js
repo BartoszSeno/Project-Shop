@@ -11,11 +11,14 @@ function GameLoopPage({ Items }) {
       {Items.map((item) => (
         <main className="game-loop-page-container">
           <div className="main-g-l">
-            <Description item={item} />
             <div className="g-s-c">
+              <Description item={item} />
               <Title item={item} />
-              <Country item={item} />
-              <Platform item={item} />
+              <div className="info-g-l">
+                <Country item={item} />
+                <Platform item={item} />
+              </div>
+
               <BuyGL item={item} />
             </div>
           </div>
