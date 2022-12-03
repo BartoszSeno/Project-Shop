@@ -11,6 +11,7 @@ import apiRequest from "./assets/apiRequest";
 import GameLoopPage from "./GameLoopPage/GameLoopPage";
 
 function App() {
+  // white - green - blue - purple - gold - orange - red
   const API_URL = "http://localhost:3600/gamesList";
 
   const [Items, setItems] = useState([]);
@@ -82,6 +83,8 @@ function App() {
 
     setTimeout(() => fetchItems(), 0);
   }, []);
+
+  // brst games
 
   return (
     <>

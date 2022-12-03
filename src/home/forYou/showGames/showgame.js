@@ -2,18 +2,63 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function ShowGame({ Items, handleDelete, addClass, setaddClass }) {
-  /*
   function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
+    return Math.floor(Math.random() * max) + 1;
   }
   const randomArrayNumber = getRandomInt(Items.length);
 
-  function RandomScriptBorder() {}
+  const [isActive, setisActive] = useState(false);
 
-  useState(() => {
-    handleDelete(2);
+  useState(() => {});
+
+  function faf() {
+    console.log(randomArrayNumber);
+    const randomIdGet = document.getElementById(randomArrayNumber);
+
+    function StartLoop() {
+      function randomMain(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      setTimeout(() => {
+        console.log("main loop");
+        setisActive(true);
+        randomIdGet.style.border = "1.5px solid";
+        randomIdGet.style.borderImage =
+          "linear-gradient(var(--angle),#ff5e60,#dd0004,#dd0004,#dd0004, #dd0004, #dd0004, #ff5e60, black, black,black,black,black,black,black)1";
+        randomIdGet.style.animation = "4s rotate linear infinite";
+        EndoLoop();
+      }, randomMain(3000, 10000));
+    }
+
+    function EndoLoop() {
+      function randomSecound(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      setTimeout(() => {
+        console.log("secound loop");
+        setisActive(false);
+        randomIdGet.style.border = "1.5px solid black";
+        randomIdGet.style.borderImage = "none";
+        randomIdGet.style.animation = "none";
+      }, randomSecound(1000, 5000));
+    }
+
+    setTimeout(() => {
+      if (isActive === false) {
+        console.log("on");
+        StartLoop();
+      } else {
+        console.log("nothing");
+      }
+    }, 1000);
+  }
+
+  useEffect(() => {
+    setTimeout(() => {
+      console.log("tun full script");
+      faf();
+    }, 5000);
   });
-  */
 
   return (
     <>
@@ -22,10 +67,9 @@ function ShowGame({ Items, handleDelete, addClass, setaddClass }) {
           <Link
             to={item.url}
             onClick={(e) => handleDelete(item.id)}
-            key={item.id}
             className="lol"
           >
-            <div className="game-container random-shade">
+            <div className="game-container" id={item.id}>
               <img src={item.img} className="img-test" alt="" />
               <div className="f-u-title">{item.gamename}</div>
               <div className="f-u-country">{item.country}</div>
