@@ -108,6 +108,7 @@
 /* for you */
 
 .f-y-container {
+  margin-top: 530px;
   width: 100%;
   height: 600px;
   display: flex;
@@ -124,7 +125,6 @@
 }
 
 .game-show-list {
-  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -240,4 +240,27 @@
   margin-top: 500px;
   height: 50px;
   width: 50px;
+}
+
+.top-g:hover {
+  border-image: linear-gradient(
+      var(--angle),
+      #ff5e60,
+      #ff5e60,
+      #dd0004,
+      #dd0004,
+      #dd0004,
+      #dd0004,
+      #dd0004,
+      #ff5e60,
+      #ff5e60
+    )
+    1 !important;
+  animation: 4s rotate linear infinite;
+  overflow: hidden;
+}
+
+.top-g:hover img {
+  transform: scale(1.03);
+  transition: 0.3s;
 }

@@ -1,5 +1,29 @@
 .best-games-container {
-  background-color: red;
-  height: 1000px;
+  height: 1500px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.best-g-title {
+  color: white;
+  font-size: 40px;
+  height: 100px;
+  width: 1340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.best-games-chose {
+  display: flex;
+  height: 440px;
+}
+.b-g-c {
+  width: 1340px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }

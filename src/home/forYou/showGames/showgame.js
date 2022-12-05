@@ -12,7 +12,6 @@ function ShowGame({ Items, handleDelete, addClass, setaddClass }) {
   useState(() => {});
 
   function faf() {
-    console.log(randomArrayNumber);
     const randomIdGet = document.getElementById(randomArrayNumber);
 
     function StartLoop() {
@@ -20,7 +19,6 @@ function ShowGame({ Items, handleDelete, addClass, setaddClass }) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
       }
       setTimeout(() => {
-        console.log("main loop");
         setisActive(true);
         randomIdGet.style.border = "1.5px solid";
         randomIdGet.style.borderImage =
@@ -35,7 +33,6 @@ function ShowGame({ Items, handleDelete, addClass, setaddClass }) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
       }
       setTimeout(() => {
-        console.log("secound loop");
         setisActive(false);
         randomIdGet.style.border = "1.5px solid black";
         randomIdGet.style.borderImage = "none";
@@ -45,17 +42,14 @@ function ShowGame({ Items, handleDelete, addClass, setaddClass }) {
 
     setTimeout(() => {
       if (isActive === false) {
-        console.log("on");
         StartLoop();
       } else {
-        console.log("nothing");
       }
     }, 1000);
   }
 
   useEffect(() => {
     setTimeout(() => {
-      console.log("tun full script");
       faf();
     }, 5000);
   });
@@ -69,7 +63,7 @@ function ShowGame({ Items, handleDelete, addClass, setaddClass }) {
             onClick={(e) => handleDelete(item.id)}
             className="lol"
           >
-            <div className="game-container" id={item.id}>
+            <div className="game-container top-g" id={item.id}>
               <img src={item.img} className="img-test" alt="" />
               <div className="f-u-title">{item.gamename}</div>
               <div className="f-u-country">{item.country}</div>

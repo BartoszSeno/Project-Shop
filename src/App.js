@@ -37,38 +37,6 @@ function App() {
   const handleDelete = async (id) => {
     const listItems = Items.filter((name) => name.id === id);
     setItems(listItems);
-    /*
-    function StartLoop() {
-      function randomMain(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
-      setTimeout(() => {
-        console.log("main loop");
-        setaddClass(true);
-      }, randomMain(10000, 100000));
-    }
-
-    function EndoLoop() {
-      function randomSecound(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
-      setTimeout(() => {
-        console.log("main loop");
-        setaddClass(false);
-      }, randomSecound(1000, 5000));
-    }
-
-    if (addClass === false) {
-      StartLoop();
-    } else {
-    }
-
-    if (addClass === true) {
-      EndoLoop();
-    } else {
-    }
-    console.log("test");
-    */
   };
 
   useEffect(() => {
