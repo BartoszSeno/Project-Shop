@@ -2,7 +2,7 @@
   "gamesList": [
     {
       "id": 1,
-      "gamename": "Black Desert Online",
+      "gamename": "Black Desert Online (PC)",
       "price": 7.07,
       "country": "Global",
       "url": "black-desrt-online",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "gamename": "Cyberpunk 2077",
+      "gamename": "Cyberpunk 2077 (PC)",
       "price": 10.01,
       "country": "Europe",
       "url": "Cyberpunk",
@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "gamename": "Days Gone",
+      "gamename": "Days Gone (PS5)",
       "price": 20.01,
       "country": "Global",
       "url": "Days-Gone",
@@ -29,7 +29,7 @@
     },
     {
       "id": 4,
-      "gamename": "Horizon: Forbidden West (PS4/PS5)",
+      "gamename": "Horizon: Forbidden West (PS5)",
       "price": 30.01,
       "country": "Europe",
       "url": "Horizon",
@@ -76,7 +76,7 @@
     },
     {
       "id": 13,
-      "gamename": "Vampire: The Masquerade - Bloodlines 2 - First Blood Edition",
+      "gamename": "Vampire: The Masquerade - Bloodlines 2 - First Blood Edition (PS5)",
       "price": 20.01,
       "country": "Global",
       "url": "Vampire-The-Masquerade",
@@ -96,7 +96,7 @@
       "id": 15,
       "gamename": "Forspoken (PC)",
       "price": 50.01,
-      "country": "Forspoken",
+      "country": "Europe",
       "url": "Forspoken",
       "img": "https://assets-prd.ignimgs.com/2022/06/23/forspoken-button-fin-1656019045535.jpg",
       "platform": "Steam"

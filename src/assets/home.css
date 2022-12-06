@@ -117,11 +117,13 @@
 }
 
 .f-y-title {
-  color: white;
+  color: #fd1f4a;
   font-size: 40px;
+  font-weight: 600;
   height: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
+  text-shadow: 4px 4px 13px rgba(0, 0, 0, 1);
 }
 
 .game-show-list {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function ShowGame({ Items, handleDelete, addClass, setaddClass }) {
+function ShowGame({ Items, handleDelete }) {
   function getRandomInt(max) {
     return Math.floor(Math.random() * max) + 1;
   }

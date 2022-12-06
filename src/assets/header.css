@@ -58,6 +58,7 @@
   color: white;
   border-top: 1.5px black solid;
   box-shadow: inset 0px -1px 0px 0px black;
+  text-shadow: 4px 4px 13px rgba(0, 0, 0, 1);
 }
 
 .l-h-c {
