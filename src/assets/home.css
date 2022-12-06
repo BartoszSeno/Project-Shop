@@ -7,14 +7,6 @@
   width: 100%;
 }
 
-.home-main {
-  width: 1340px;
-  height: 1000px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .baner-container {
   width: 1901px;
   height: 375px;
@@ -108,8 +100,7 @@
 /* for you */
 
 .f-y-container {
-  margin-top: 530px;
-  width: 100%;
+  width: 1340px;
   height: 600px;
   display: flex;
   align-items: center;

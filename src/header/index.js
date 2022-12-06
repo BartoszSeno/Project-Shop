@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <header className="main-header">
-      <div className="upper-header">
+      <section className="upper-header">
         <div className="u-h-c">
           <Link to="/" onClick={refresh}>
             <Logo />
@@ -28,8 +28,8 @@ function Header() {
           <Search />
           <Currency />
         </div>
-      </div>
-      <div className="lower-header">
+      </section>
+      <section className="lower-header">
         <div className="l-h-c">
           <Link to="/Shop">
             <Shop />
@@ -44,7 +44,7 @@ function Header() {
             <Cart />
           </Link>
         </div>
-      </div>
+      </section>
     </header>
   );
 }

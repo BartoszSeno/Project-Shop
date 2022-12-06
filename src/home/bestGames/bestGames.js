@@ -12,7 +12,7 @@ function BestGames({ ItemsBest, BestGameId }) {
   const slice = ItemsBest.slice(0, maxSee);
   return (
     <>
-      <div className="best-games-container">
+      <section className="best-games-container">
         <div className="best-g-title">Best Games</div>
         <div className="b-g-c">
           {slice.map((BGames) => (
@@ -38,7 +38,7 @@ function BestGames({ ItemsBest, BestGameId }) {
             </>
           ))}
         </div>
-      </div>
+      </section>
     </>
   );
 }
