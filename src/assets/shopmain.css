@@ -13,7 +13,7 @@
   display: flex;
 }
 
-.home-header-container {
+.shop-header-container {
   background-color: #393074;
   -webkit-box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
   -moz-box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
@@ -41,7 +41,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.search-home,
+.search-shop,
 .price,
 .country-s {
   background-color: transparent;
@@ -58,21 +58,22 @@ input::-webkit-inner-spin-button {
   color: white;
 }
 
-.search-home:hover,
+.search-shop:hover,
 .price:hover {
   -webkit-box-shadow: inset 0px 0px 100px -57px rgba(0, 0, 0, 1);
   -moz-box-shadow: inset 0px 0px 100px -57px rgba(0, 0, 0, 1);
   box-shadow: inset 0px 0px 100px -57px rgba(0, 0, 0, 1);
 }
 
-.price-c {
+.section-price {
   display: flex;
-  flex-direction: row;
+  width: 200px;
   justify-content: center;
   align-items: center;
 }
 
 .betwen-price {
+  margin-top: 10px;
   font-size: 30px;
   color: white;
   display: flex;
@@ -94,13 +95,24 @@ option {
   outline: none;
 }
 
-.form-h-l {
+.form-h-l,
+.form-h-l-p,
+.form-h-l-s {
   color: white;
   font-size: 25px;
   margin-bottom: -20px;
+  margin-left: 15px;
   padding: 0;
   display: flex;
   align-items: flex-end;
   width: 80%;
   height: 40px;
+}
+
+.form-h-l-p {
+  margin-left: -10px;
+}
+
+.section-country {
+  margin-top: 5px;
 }
