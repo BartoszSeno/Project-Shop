@@ -1,14 +1,18 @@
 import ShopHeader from "./homeHeader/header";
+import GameShopList from "./gamesList/gameList";
+import Footer from "../footer";
 import "../assets/shopmain.css";
 
-function ShopMain() {
+function ShopMain({ ItemsBest, BestGameId }) {
   return (
     <>
-      <div className="shop-container">
-        <div className="shop-main-h">
+      <section className="shop-container">
+        <div className="shop-header-container">
           <ShopHeader />
+          <GameShopList ItemsBest={ItemsBest} BestGameId={BestGameId} />
         </div>
-      </div>
+        <Footer />
+      </section>
     </>
   );
 }

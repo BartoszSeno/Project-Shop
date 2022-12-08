@@ -3,7 +3,7 @@ import Option from "./option/option";
 function ShopHeader() {
   return (
     <>
-      <header className="shop-header-container">
+      <aside className="shop-header-container">
         <form className="form-h-h">
           <section>
             <label htmlFor="price" className="form-h-l-s">
@@ -21,7 +21,7 @@ function ShopHeader() {
           </section>
           <Option />
         </form>
-      </header>
+      </aside>
     </>
   );
 }

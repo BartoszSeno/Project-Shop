@@ -1,12 +1,9 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import apiRequest from "../../assets/apiRequest";
 import { Link } from "react-router-dom";
 import "../../assets/bestGame.css";
 
 function BestGames({ ItemsBest, BestGameId }) {
-  // white - green - blue - purple - gold - orange - red
-
   const maxSee = 10;
 
   const slice = ItemsBest.slice(0, maxSee);

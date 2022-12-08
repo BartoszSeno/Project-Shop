@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import apiRequest from "./assets/apiRequest";
 import GameLoopPage from "./GameLoopPage/GameLoopPage";
 import BestGameLoopPage from "./BestGameLoopPage/GameLoopPage";
+import Footer from "./footer";
 
 function App() {
   // white - green - blue - purple - gold - orange - red
@@ -95,6 +96,7 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
+
         <Routes>
           <Route
             path="/"
@@ -108,7 +110,10 @@ function App() {
             }
           ></Route>
           <Route path="/Cart" element={<Cart />}></Route>
-          <Route path="/Shop" element={<ShopMain />}></Route>
+          <Route
+            path="/Shop"
+            element={<ShopMain ItemsBest={ItemsBest} BestGameId={BestGameId} />}
+          ></Route>
           <Route path="/Pc" element={<Pc />}></Route>
           <Route path="/Ps" element={<Ps />}></Route>
           {Items.map((item) => (

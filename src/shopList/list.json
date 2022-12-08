@@ -136,6 +136,96 @@
       "url": "The-Dark-Pictures-Anthology",
       "img": "https://images.g2a.com/1024x768/1x1x0/the-dark-pictures-anthology-the-devil-in-me-pc-steam-gift-europe-i10000336734004/aebff036fe604b6798cea587",
       "platform": "Steam"
+    },
+    {
+      "id": 20,
+      "gamename": "The Witcher 3: Wild Hunt GOTY",
+      "price": 7.07,
+      "country": "Poland",
+      "url": "The-Witcher",
+      "img": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png",
+      "platform": "Gog.com"
+    },
+    {
+      "id": 21,
+      "gamename": "Need for Speed™ Unbound (PC)",
+      "price": 7.07,
+      "country": "Global",
+      "url": "Need-for-Speed-Unbound",
+      "img": "https://www.mediaexpert.pl/media/cache/resolve/gallery/images/42/4205400/Need-for-Speed-Unbound-Gra-PC-front-2d-001.jpg",
+      "platform": "Website"
+    },
+    {
+      "id": 22,
+      "gamename": "S.T.A.L.K.E.R. 2: Heart of Chornobyl (PC)",
+      "price": 10.01,
+      "country": "Europe",
+      "url": "stalker",
+      "img": "https://image.ceneostatic.pl/data/products/109868363/i-s-t-a-l-k-e-r-2-heart-of-chernobyl-digital.jpg",
+      "platform": "Steam"
+    },
+    {
+      "id": 23,
+      "gamename": "Vampire: The Masquerade - Bloodlines 2 - First Blood Edition (PS5)",
+      "price": 20.01,
+      "country": "Global",
+      "url": "Vampire-The-Masquerade",
+      "img": "https://upload.wikimedia.org/wikipedia/en/9/90/Vampire_The_Masquerade_Bloodlines_2_Cover_Art.png",
+      "platform": "Steam"
+    },
+    {
+      "id": 24,
+      "gamename": "Hogwarts Legacy (PC)",
+      "price": 30.01,
+      "country": "Europe",
+      "url": "Hogwarts-Legacy",
+      "img": "https://cdn-products.eneba.com/resized-products/pWjtGdm5_gHCDbrLlHo_OtPbUsin7dyCzylQ0snaSoM_350x200_1x-0.jpg",
+      "platform": "Steam"
+    },
+    {
+      "id": 25,
+      "gamename": "Forspoken (PC)",
+      "price": 50.01,
+      "country": "Europe",
+      "url": "Forspoken",
+      "img": "https://assets-prd.ignimgs.com/2022/06/23/forspoken-button-fin-1656019045535.jpg",
+      "platform": "Steam"
+    },
+    {
+      "id": 26,
+      "gamename": "Marvel's Midnight Suns (PC)",
+      "price": 10.01,
+      "country": "Europe",
+      "url": "Marvels-Midnight-Suns",
+      "img": "https://cdn1.epicgames.com/offer/ea73c08ac633414584e281f838b3a78c/EGS_MarvelsMidnightSuns_FiraxisGames_S2_1200x1600-2bbbf1249898e7441527c7b5679b1dd2",
+      "platform": "Steam"
+    },
+    {
+      "id": 27,
+      "gamename": "God of War Ragnarök (PS5)",
+      "price": 20.01,
+      "country": "Europe",
+      "url": "God-of-War-Ragnarok",
+      "img": "https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png",
+      "platform": "PlayStation"
+    },
+    {
+      "id": 28,
+      "gamename": "Gungrave G.O.R.E (PC)",
+      "price": 30.01,
+      "country": "Europe",
+      "url": "Gungrave",
+      "img": "https://game-access.pl/images/Covers/gungrave-gore-dostep-do-konta-steam-pc.webp",
+      "platform": "Steam"
+    },
+    {
+      "id": 29,
+      "gamename": "The Dark Pictures Anthology: The Devil in Me (PC)",
+      "price": 50.01,
+      "country": "Global",
+      "url": "The-Dark-Pictures-Anthology",
+      "img": "https://images.g2a.com/1024x768/1x1x0/the-dark-pictures-anthology-the-devil-in-me-pc-steam-gift-europe-i10000336734004/aebff036fe604b6798cea587",
+      "platform": "Steam"
     }
   ]
 }

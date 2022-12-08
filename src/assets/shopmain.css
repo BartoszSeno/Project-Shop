@@ -1,25 +1,27 @@
 .shop-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
   margin-top: 160px;
 }
 
 .shop-main-h {
-  background-color: palevioletred;
-  width: 70%;
+  background-color: #1d1f20;
   height: 1000px; /* % */
   display: flex;
 }
 
 .shop-header-container {
-  background-color: #393074;
+  background-color: rgb(21, 22, 22);
   -webkit-box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
   -moz-box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
   box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
   z-index: 110;
   display: flex;
+  height: 2200px;
 }
 
 .form-h-h {
@@ -45,7 +47,7 @@ input::-webkit-inner-spin-button {
 .price,
 .country-s {
   background-color: transparent;
-  border: 2px solid #282140;
+  border: 2px solid #1d1f20;
   height: 40px;
   width: 200px;
   display: flex;
@@ -87,7 +89,7 @@ input::-webkit-inner-spin-button {
 }
 
 option {
-  background-color: #282140;
+  background-color: rgb(21, 22, 22);
   height: 40px;
   width: 200px;
   font-size: 26px;
@@ -115,4 +117,12 @@ option {
 
 .section-country {
   margin-top: 5px;
+}
+
+.g-l-c {
+  width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 15px;
 }

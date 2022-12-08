@@ -31,13 +31,13 @@ function Header() {
       </section>
       <section className="lower-header">
         <div className="l-h-c">
-          <Link to="/Shop">
+          <Link to="/Shop" onClick={refresh}>
             <Shop />
           </Link>
-          <Link to="/Pc">
+          <Link to="/Pc" onClick={refresh}>
             <Pc />
           </Link>
-          <Link to="/PS">
+          <Link to="/PS" onClick={refresh}>
             <Ps />
           </Link>
           <Link to="/Cart" className="cart-container">
