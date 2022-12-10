@@ -1,4 +1,3 @@
-import ShopHeader from "./homeHeader/header";
 import GameShopList from "./gamesList/gameList";
 import Footer from "../footer";
 import "../assets/shopmain.css";
@@ -16,15 +15,27 @@ function ShopMain({ ItemsBest, BestGameId }) {
 
     delbut.style.display = "none";
   };
+
+  const filterPosts = (slice, query) => {
+    if (!query) {
+      return slice;
+    }
+
+    return slice.filter((bgames) => {
+      const postName = bgames.gamename.toLowerCase();
+      return postName.includes(query);
+    });
+  };
+
   return (
     <>
       <section className="shop-container">
         <div className="shop-header-container">
-          <ShopHeader />
           <GameShopList
             ItemsBest={ItemsBest}
             BestGameId={BestGameId}
             maxSee={maxSee}
+            filterPosts={filterPosts}
           />
         </div>
         <section className="button">

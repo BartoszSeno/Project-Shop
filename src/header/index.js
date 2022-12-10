@@ -19,7 +19,7 @@ function Header() {
   useEffect(() => {}, []);
 
   return (
-    <header className="main-header">
+    <nav className="main-header">
       <section className="upper-header">
         <div className="u-h-c">
           <Link to="/" onClick={refresh}>
@@ -45,7 +45,7 @@ function Header() {
           </Link>
         </div>
       </section>
-    </header>
+    </nav>
   );
 }
 

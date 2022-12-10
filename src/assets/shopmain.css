@@ -13,6 +13,14 @@
   height: 1000px; /* % */
   display: flex;
 }
+.shop-header-container {
+  width: 1379px;
+}
+.shop-header-container-t {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
 
 .shop-header-container,
 .shop-header-container-t {
@@ -22,7 +30,7 @@
   box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
   z-index: 110;
   display: flex;
-  height: 2200px;
+  height: 2210px;
   overflow: hidden;
 }
 
@@ -125,12 +133,12 @@ option {
 }
 
 .g-l-c {
-  width: 1140px;
+  width: 1340px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   padding-top: 15px;
-  height: 1000px;
+  height: 450px;
+  margin-left: 27px;
 }
 
 .button {

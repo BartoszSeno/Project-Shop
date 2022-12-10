@@ -1,16 +1,15 @@
 import Option from "./option/option";
+import ShopNavSearch from "../search/search";
 
-function ShopHeader() {
+function ShopHeader({ searchQuery, setSearchQuery }) {
   return (
     <>
       <aside className="shop-header-container-t">
         <form className="form-h-h">
-          <section>
-            <label htmlFor="price" className="form-h-l-s">
-              Search
-            </label>
-            <input type="text" className="search-shop" />
-          </section>
+          <ShopNavSearch
+            searchQuery={searchQuery}
+            setSearchQuery={setSearchQuery}
+          />
           <label htmlFor="price" className="form-h-l-p">
             Price
           </label>

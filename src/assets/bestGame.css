@@ -21,6 +21,7 @@
 .best-games-chose {
   display: flex;
   height: 440px;
+  margin-left: 13px;
 }
 .b-g-c {
   width: 1340px;
