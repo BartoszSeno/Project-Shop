@@ -13,7 +13,6 @@ function GameShopList({ ItemsBest, BestGameId, maxSee, filterPosts }) {
   return (
     <>
       <ShopHeader searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-
       <main className="g-l-c">
         {filteredPosts.map((bgames) => (
           <>

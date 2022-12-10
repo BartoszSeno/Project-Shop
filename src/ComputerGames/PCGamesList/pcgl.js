@@ -1,16 +1,25 @@
 import { Link } from "react-router-dom";
+import ShopHeader from "../../shop/homeHeader/header";
+import { useState } from "react";
 
-function Pcgl({ ItemsBest, BestGameId }) {
+function Pcgl({ ItemsBest, BestGameId, filterPosts }) {
   function HidePSN() {
     var elemsS = document.getElementsByClassName("PlayStation");
     for (let i = 0; i < elemsS.length; i += 1) {
       elemsS[i].style.display = "none";
     }
   }
+
+  const { search } = window.location;
+  const query = new URLSearchParams(search).get("");
+  const [searchQuery, setSearchQuery] = useState(query || "");
+  const filteredPosts = filterPosts(ItemsBest, searchQuery);
+
   return (
     <>
+      <ShopHeader searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <main className="g-l-c" onLoad={HidePSN()}>
-        {ItemsBest.map((BGames) => (
+        {filteredPosts.map((BGames) => (
           <>
             <Link
               to={`../${BGames.url}`}

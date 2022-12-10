@@ -3,7 +3,7 @@ import Footer from "../footer";
 import "../assets/shopmain.css";
 import { useState } from "react";
 
-function ShopMain({ ItemsBest, BestGameId }) {
+function ShopMain({ ItemsBest, BestGameId, filterPosts }) {
   const [maxSee, setmaxSee] = useState(20);
 
   const loadMore = () => {
@@ -14,17 +14,6 @@ function ShopMain({ ItemsBest, BestGameId }) {
     setmaxSee(maxSee + 20);
 
     delbut.style.display = "none";
-  };
-
-  const filterPosts = (slice, query) => {
-    if (!query) {
-      return slice;
-    }
-
-    return slice.filter((bgames) => {
-      const postName = bgames.gamename.toLowerCase();
-      return postName.includes(query);
-    });
   };
 
   return (

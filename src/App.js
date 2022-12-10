@@ -93,6 +93,16 @@ function App() {
     setTimeout(() => fetchItemsBest(), 0);
   }, []);
 
+  const filterPosts = (slice, query) => {
+    if (!query) {
+      return slice;
+    }
+
+    return slice.filter((bgames) => {
+      const postName = bgames.gamename.toLowerCase();
+      return postName.includes(query);
+    });
+  };
   return (
     <>
       <BrowserRouter>
@@ -112,17 +122,33 @@ function App() {
           <Route path="/Cart" element={<Cart />}></Route>
           <Route
             path="/Shop"
-            element={<ShopMain ItemsBest={ItemsBest} BestGameId={BestGameId} />}
+            element={
+              <ShopMain
+                ItemsBest={ItemsBest}
+                BestGameId={BestGameId}
+                filterPosts={filterPosts}
+              />
+            }
           ></Route>
           <Route
             path="/Pc"
             element={
-              <ComputerGames ItemsBest={ItemsBest} BestGameId={BestGameId} />
+              <ComputerGames
+                ItemsBest={ItemsBest}
+                BestGameId={BestGameId}
+                filterPosts={filterPosts}
+              />
             }
           ></Route>
           <Route
             path="/Ps"
-            element={<PSNGames ItemsBest={ItemsBest} BestGameId={BestGameId} />}
+            element={
+              <PSNGames
+                ItemsBest={ItemsBest}
+                BestGameId={BestGameId}
+                filterPosts={filterPosts}
+              />
+            }
           ></Route>
           {Items.map((item) => (
             <Route

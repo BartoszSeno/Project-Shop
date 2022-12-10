@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import ShopHeader from "../../shop/homeHeader/header";
 
-function Psngl({ ItemsBest, BestGameId }) {
+function Psngl({ ItemsBest, BestGameId, filterPosts }) {
   function HidePC() {
     var elemsS = document.getElementsByClassName("Steam");
     for (let i = 0; i < elemsS.length; i += 1) {
@@ -16,10 +18,16 @@ function Psngl({ ItemsBest, BestGameId }) {
     }
   }
 
+  const { search } = window.location;
+  const query = new URLSearchParams(search).get("");
+  const [searchQuery, setSearchQuery] = useState(query || "");
+  const filteredPosts = filterPosts(ItemsBest, searchQuery);
+
   return (
     <>
+      <ShopHeader searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <main className="g-l-c" onLoad={HidePC()}>
-        {ItemsBest.map((BGames) => (
+        {filteredPosts.map((BGames) => (
           <>
             <Link
               to={`../${BGames.url}`}
