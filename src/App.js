@@ -10,6 +10,8 @@ import { useEffect } from "react";
 import apiRequest from "./assets/apiRequest";
 import GameLoopPage from "./GameLoopPage/GameLoopPage";
 import BestGameLoopPage from "./BestGameLoopPage/GameLoopPage";
+import ComputerGames from "./ComputerGames";
+import PSNGames from "./psnGames";
 
 function App() {
   // white - green - blue - purple - gold - orange - red
@@ -112,8 +114,16 @@ function App() {
             path="/Shop"
             element={<ShopMain ItemsBest={ItemsBest} BestGameId={BestGameId} />}
           ></Route>
-          <Route path="/Pc" element={<Pc />}></Route>
-          <Route path="/Ps" element={<Ps />}></Route>
+          <Route
+            path="/Pc"
+            element={
+              <ComputerGames ItemsBest={ItemsBest} BestGameId={BestGameId} />
+            }
+          ></Route>
+          <Route
+            path="/Ps"
+            element={<PSNGames ItemsBest={ItemsBest} BestGameId={BestGameId} />}
+          ></Route>
           {Items.map((item) => (
             <Route
               path={item.url}

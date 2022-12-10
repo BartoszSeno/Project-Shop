@@ -9,9 +9,12 @@ function ShopMain({ ItemsBest, BestGameId }) {
 
   const loadMore = () => {
     const ConHeight = document.querySelector(".shop-header-container");
+    const delbut = document.querySelector(".button");
 
-    ConHeight.style.height = "3100px ";
-    setmaxSee(maxSee + maxSee);
+    ConHeight.style.height = "3550px ";
+    setmaxSee(maxSee + 20);
+
+    delbut.style.display = "none";
   };
   return (
     <>

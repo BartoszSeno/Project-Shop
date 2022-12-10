@@ -16,7 +16,7 @@
       "country": "Europe",
       "url": "Cyberpunk",
       "img": "https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077_CDPROJEKTRED_S2_03_1200x1600-b1847981214ac013383111fc457eb9c5",
-      "platform": "Gog.com"
+      "platform": "Gog_com"
     },
     {
       "id": 3,
@@ -139,11 +139,11 @@
     },
     {
       "id": 20,
-      "gamename": "Crisis Core: Final Fantasy 7 (PC)",
-      "price": 7.07,
+      "gamename": "Marvel’s Spider-Man: Miles Morales (PC)",
+      "price": 50.01,
       "country": "Global",
-      "url": "Crisis-Core-Final-Fantasy-7",
-      "img": "https://gh.cdn.sewest.net/assets/ident/pulse/9204736e/CRISISCORE-Pulse-Portrait-ckxrenon1.jpg?quality=65",
+      "url": "Spider-Mans",
+      "img": "https://cdn1.epicgames.com/offer/f696430be718494fac1d6542cfb22542/EGS_MarvelsSpiderManMilesMorales_InsomniacGamesNixxesSoftware_S2_1200x1600-58989e7116de3f70a2ae6ea56ee202c6",
       "platform": "Steam"
     },
     {
@@ -297,7 +297,43 @@
       "country": "Poland",
       "url": "The-Witcher",
       "img": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png",
-      "platform": "Gog.com"
+      "platform": "Gog_com"
+    },
+    {
+      "id": 39,
+      "gamename": "Black Desert Online (PC)",
+      "price": 7.07,
+      "country": "Global",
+      "url": "black-desrt-Online",
+      "img": "https://geex.x-kom.pl/wp-content/uploads/2022/04/black-desert-online-grafika-logo.jpg",
+      "platform": "Website"
+    },
+    {
+      "id": 40,
+      "gamename": "Cyberpunk 2077 (PC)",
+      "price": 10.01,
+      "country": "Europe",
+      "url": "CyberPunk",
+      "img": "https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077_CDPROJEKTRED_S2_03_1200x1600-b1847981214ac013383111fc457eb9c5",
+      "platform": "Gog_com"
+    },
+    {
+      "id": 41,
+      "gamename": "Days Gone (PS5)",
+      "price": 20.01,
+      "country": "Global",
+      "url": "Days-gone",
+      "img": "https://a.allegroimg.com/original/116fdf/27757a624f90be442f6bd4895427/Days-Gone-KLUCZ-Steam-GRA-NA-PC",
+      "platform": "Steam"
+    },
+    {
+      "id": 42,
+      "gamename": "Horizon: Forbidden West (PS5)",
+      "price": 30.01,
+      "country": "Europe",
+      "url": "horizon",
+      "img": "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/v4eAjYFYVdvZayun8qR5RO8B.jpg",
+      "platform": "PlayStation"
     }
   ]
 }
