@@ -1,22 +1,21 @@
-import ShopHeader from "./homeHeader/header";
-import GameShopList from "./gamesList/gameList";
+import ShopHeader from "../shop/homeHeader/header";
+import GameShopListTwo from "./ShopPageTwoList/SPTL";
 import Footer from "../footer";
 import "../assets/shopmain.css";
 import { Link } from "react-router-dom";
 
-function ShopMain({ ItemsBest, BestGameId }) {
+function PageTwo({ ItemsBest, BestGameId }) {
   return (
     <>
       <section className="shop-container">
         <div className="shop-header-container">
           <ShopHeader />
-          <GameShopList ItemsBest={ItemsBest} BestGameId={BestGameId} />
+          <GameShopListTwo ItemsBest={ItemsBest} BestGameId={BestGameId} />
         </div>
         <Footer />
-        <Link to="/Page-2"> strona 2</Link>
       </section>
     </>
   );
 }
 
-export default ShopMain;
+export default PageTwo;
