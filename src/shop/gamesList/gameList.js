@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 
-function GameShopList({ ItemsBest, BestGameId }) {
-  const maxSee = 20;
-
+function GameShopList({ ItemsBest, BestGameId, maxSee }) {
   const slice = ItemsBest.slice(0, maxSee);
 
   return (

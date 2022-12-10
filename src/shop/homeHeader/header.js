@@ -3,7 +3,7 @@ import Option from "./option/option";
 function ShopHeader() {
   return (
     <>
-      <aside className="shop-header-container">
+      <aside className="shop-header-container-t">
         <form className="form-h-h">
           <section>
             <label htmlFor="price" className="form-h-l-s">

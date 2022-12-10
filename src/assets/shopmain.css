@@ -14,7 +14,8 @@
   display: flex;
 }
 
-.shop-header-container {
+.shop-header-container,
+.shop-header-container-t {
   background-color: rgb(21, 22, 22);
   -webkit-box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
   -moz-box-shadow: 0px 0px 40px -12px rgba(0, 0, 0, 1);
@@ -22,12 +23,17 @@
   z-index: 110;
   display: flex;
   height: 2200px;
+  overflow: hidden;
 }
 
+.shop-header-container-t {
+  height: 3100px;
+}
 .form-h-h {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 3100px;
 }
 
 textarea:focus,
@@ -125,4 +131,21 @@ option {
   flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 15px;
+}
+
+.button {
+  background-color: rgb(21, 22, 22);
+  margin-top: -2px;
+  width: 1378px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.load-more-game-list {
+  height: 70px;
+  width: 250px;
+  font-size: 30px;
 }

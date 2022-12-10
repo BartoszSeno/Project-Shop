@@ -10,7 +10,6 @@ import { useEffect } from "react";
 import apiRequest from "./assets/apiRequest";
 import GameLoopPage from "./GameLoopPage/GameLoopPage";
 import BestGameLoopPage from "./BestGameLoopPage/GameLoopPage";
-import PageTwo from "./ShopPageTwo/pageTwo";
 
 function App() {
   // white - green - blue - purple - gold - orange - red
@@ -127,10 +126,6 @@ function App() {
               element={<BestGameLoopPage ItemsBest={ItemsBest} />}
             ></Route>
           ))}
-          <Route
-            path="/Page-2"
-            element={<PageTwo ItemsBest={ItemsBest} BestGameId={BestGameId} />}
-          ></Route>
         </Routes>
       </BrowserRouter>
     </>
