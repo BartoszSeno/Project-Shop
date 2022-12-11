@@ -78,6 +78,7 @@
     width: 1050px;
   }
 }
+/*200%*/
 
 @media only screen and (max-width: 1097px) {
   .nav-burger-container {
@@ -85,5 +86,22 @@
   }
   .main-header {
     display: none;
+  }
+  .burger-nav {
+    max-width: 375px;
+  }
+  .logo {
+    font-size: 40px;
+  }
+  .b-a {
+    width: 100%;
+  }
+}
+/* 500% */
+
+@media only screen and (max-width: 479px) {
+  .burger-nav {
+    max-width: 100%;
+    width: 100%;
   }
 }

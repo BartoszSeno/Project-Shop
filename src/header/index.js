@@ -48,7 +48,12 @@ function Header() {
         </section>
       </nav>
       <nav className="nav-burger-container">
-        <BurgerNav />
+        <div className="sub-menu">
+          <BurgerNav />
+          <Link to="/" onClick={refresh} className="burger-logo">
+            <Logo />
+          </Link>
+        </div>
       </nav>
     </>
   );

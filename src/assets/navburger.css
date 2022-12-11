@@ -17,6 +17,7 @@
   height: 40px;
   width: 80px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .burger-menu__animated {
@@ -69,38 +70,55 @@
 
 .burger-nav {
   position: fixed;
-  background-color: aqua;
-  align-items: center;
+  background-color: rgba(21, 22, 22, 0.384);
   flex-direction: column;
-  font-size: 14vh;
+  font-size: 30px;
   height: 100%;
-  width: 40%;
-  line-height: 30vh;
   z-index: 300;
   display: none;
-  left: 60%;
+  width: 100%;
+}
+
+.logo-b {
+  position: absolute;
+  height: 100px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 100px;
 }
 
 .nav-container {
-  margin-left: 125px;
-  margin-top: 80px;
+  height: 500px;
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
 }
-.b-home {
+.b-shop,
+.b-pc,
+.b-psn {
   cursor: pointer;
   z-index: 990;
-  background-color: red;
-  padding: 0px 80px 100px 80px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 80%;
+  height: 100%;
 }
 
-.b-slide {
-  cursor: pointer;
-  background-color: red;
-  padding: 0px 80px 100px 80px;
-
-  z-index: 10000;
+.b-a {
+  background-color: #1d1f20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border-top: inset 1px black;
+  border-bottom: inset 1px rgba(128, 128, 128, 0.295);
 }
-.b-home:hover,
-.b-slide:hover {
+
+.b-shop:hover,
+.b-pc:hover,
+.b-psn:hover {
   color: gray;
 }
 
