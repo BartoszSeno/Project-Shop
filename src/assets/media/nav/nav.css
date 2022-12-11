@@ -1,0 +1,89 @@
+/* 110% */
+
+@media only screen and (max-width: 1919px) {
+  .upper-header {
+    height: 95px;
+  }
+  .lower-header {
+    height: 55px;
+  }
+  .cart {
+    margin-top: -7px;
+  }
+  .shop,
+  .pc,
+  .ps,
+  .cart {
+    height: 53px;
+  }
+}
+
+/* 125% */
+
+@media only screen and (max-width: 1745px) {
+  .upper-header {
+    height: 90px;
+  }
+
+  .lower-header,
+  .l-h-c {
+    height: 50px;
+    font-size: 27px;
+  }
+
+  .cart {
+    margin-top: 0px;
+  }
+
+  .shop,
+  .pc,
+  .ps,
+  .cart {
+    height: 49px;
+  }
+}
+
+/* 150% */
+
+@media only screen and (max-width: 1535px) {
+  .upper-header {
+    height: 85px;
+  }
+
+  .logo {
+    font-size: 70px;
+  }
+  .lower-header,
+  .l-h-c {
+    height: 45px;
+    font-size: 27px;
+  }
+
+  .cart {
+    margin-top: -2px;
+  }
+
+  .shop,
+  .pc,
+  .ps,
+  .cart {
+    height: 43px;
+  }
+}
+
+/* 175% */
+
+@media only screen and (max-width: 1279px) {
+  .cart-container {
+    width: 1050px;
+  }
+}
+
+@media only screen and (max-width: 1097px) {
+  .nav-burger-container {
+    display: flex !important;
+  }
+  .main-header {
+    display: none;
+  }
+}

@@ -14,11 +14,12 @@ import ComputerGames from "./ComputerGames";
 import PSNGames from "./psnGames";
 
 function App() {
-  // white - green - blue - purple - gold - orange - red
+  // script for data file from .json
   const API_URL = "http://localhost:3600/gamesList";
 
   const [Items, setItems] = useState([]);
 
+  // colect id .json file
   const addItem = async (name) => {
     const id = Items.length ? Items[Items.length - 1].id + 1 : 1;
     const myNewItems = { id, name };
@@ -35,6 +36,7 @@ function App() {
     const result = await apiRequest(API_URL, postOptions);
   };
 
+  // individual id
   const handleDelete = async (id) => {
     const listItems = Items.filter((name) => name.id === id);
     setItems(listItems);
@@ -54,10 +56,12 @@ function App() {
   }, []);
 
   // brst games
+  // colect id .json file
 
   const [ItemsBest, setItemsBest] = useState([]);
 
   const API_URL_B = "http://localhost:3600/best-games";
+  // colect id .json file
 
   const BestGame = async (name) => {
     const id = ItemsBest.length ? ItemsBest[ItemsBest.length - 1].id + 1 : 1;
@@ -74,6 +78,7 @@ function App() {
     };
     const result = await apiRequest(API_URL_B, postOptions);
   };
+  // individual id
 
   const BestGameId = async (id) => {
     const listItemsBest = ItemsBest.filter((name) => name.id === id);
@@ -93,6 +98,7 @@ function App() {
     setTimeout(() => fetchItemsBest(), 0);
   }, []);
 
+  // filter data from .json for search bar
   const filterPosts = (slice, query) => {
     if (!query) {
       return slice;

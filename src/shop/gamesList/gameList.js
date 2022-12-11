@@ -3,8 +3,11 @@ import { useState } from "react";
 import ShopHeader from "../homeHeader/header";
 
 function GameShopList({ ItemsBest, BestGameId, maxSee, filterPosts }) {
+  //search bar
+  //max count of display (ItemBest - data .json)
   const slice = ItemsBest.slice(0, maxSee);
 
+  //script for search
   const { search } = window.location;
   const query = new URLSearchParams(search).get("");
   const [searchQuery, setSearchQuery] = useState(query || "");
