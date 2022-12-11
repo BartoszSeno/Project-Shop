@@ -1,0 +1,180 @@
+/* 110% */
+
+@media only screen and (max-width: 1919px) {
+  .baner-container {
+    width: 1730px;
+    margin-top: 150px;
+    height: 360px;
+  }
+}
+
+/* 125% */
+
+@media only screen and (max-width: 1745px) {
+  .baner-container {
+    width: 1520px;
+    margin-top: 140px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-img {
+    background-size: 880px;
+  }
+
+  .game-two {
+    display: none;
+  }
+
+  .game-img {
+    width: 17%;
+  }
+  .game-one,
+  .game-two,
+  .game-three {
+    background-size: 280px;
+  }
+}
+
+/* 150% */
+
+@media only screen and (max-width: 1535px) {
+  #root {
+    width: 1235px;
+    overflow: hidden;
+  }
+  .baner-container {
+    width: 1300px;
+    margin-top: 130px;
+    height: 350px;
+  }
+
+  .main-img {
+    background-size: 880px;
+  }
+
+  .game-two {
+    display: none;
+  }
+
+  .game-img {
+    width: 17%;
+  }
+  .game-one,
+  .game-two,
+  .game-three {
+    background-size: 280px;
+  }
+}
+
+/* 175% */
+
+@media only screen and (max-width: 1279px) {
+  #root {
+    width: 1097px;
+  }
+  .baner-container {
+    width: 1300px;
+    margin-top: 130px;
+    height: 300px;
+  }
+
+  .main-img {
+    background-size: 755px;
+  }
+
+  .game-img {
+    width: 14%;
+  }
+
+  .game-one,
+  .game-three {
+    background-size: 230px;
+    background-position-x: -20px;
+  }
+}
+
+/* 200% */
+
+@media only screen and (max-width: 1097px) {
+  #root {
+    width: 960px;
+  }
+  .baner-container {
+    width: 1650px;
+    margin-top: 100px;
+    height: 300px;
+  }
+
+  .main-img {
+    background-size: 960px;
+  }
+
+  .game-one,
+  .game-three {
+    display: none;
+  }
+}
+/* 250% */
+
+@media only screen and (max-width: 959px) {
+  #root {
+    width: 761px;
+  }
+  .baner-container {
+    width: 1310px;
+    height: 270px;
+  }
+
+  .main-img {
+    background-size: 765px;
+  }
+}
+
+/* 300% */
+
+@media only screen and (max-width: 767px) {
+  #root {
+    width: 634px;
+    overflow: hidden;
+  }
+  .baner-container {
+    width: 1100px;
+  }
+
+  .main-img {
+    background-size: 765px;
+  }
+}
+/* 400% */
+
+@media only screen and (max-width: 639px) {
+  #root {
+    width: 475px;
+  }
+  .baner-container {
+    width: 820px;
+    height: 244px;
+  }
+
+  .main-img {
+    background-size: 580px;
+  }
+}
+
+/* 500% */
+
+@media only screen and (max-width: 479px) {
+  #root {
+    width: 380px;
+  }
+  .baner-container {
+    width: 650px;
+  }
+
+  .main-img {
+    background-size: 580px;
+    background-position-x: -200px;
+  }
+}

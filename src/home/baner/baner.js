@@ -1,3 +1,5 @@
+import "../../assets/media/baner/banermedia.css";
+
 function Baner() {
   return (
     <>
