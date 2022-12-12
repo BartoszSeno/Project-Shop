@@ -65,10 +65,16 @@ function ShowGame({ Items, handleDelete }) {
           >
             <div className="game-container top-g" id={item.id}>
               <img src={item.img} className="img-test" alt="" />
-              <div className="f-u-title">{item.gamename}</div>
-              <div className="f-u-country">{item.country}</div>
-              <span className="f-u-from">From</span>
-              <div className="f-u-price">{item.price} €</div>
+              <span>
+                <span className="scale-top">
+                  <div className="f-u-title">{item.gamename}</div>
+                  <div className="f-u-country">{item.country}</div>
+                </span>
+                <span className="scale-pos">
+                  <span className="f-u-from">From</span>
+                  <div className="f-u-price">{item.price} €</div>
+                </span>
+              </span>
             </div>
           </Link>
         </>

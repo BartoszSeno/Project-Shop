@@ -3,7 +3,7 @@ import Baner from "./baner/baner";
 import ForYou from "./forYou/foryou";
 import BestGames from "./bestGames/bestGames";
 import Footer from "../footer";
-import "../assets/media/home/main110.css";
+import "../assets/media/home/mainmedia.css";
 
 function Home({ Items, handleDelete, ItemsBest, BestGameId }) {
   return (
