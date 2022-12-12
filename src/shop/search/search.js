@@ -1,7 +1,7 @@
 function ShopNavSearch({ searchQuery, setSearchQuery }) {
   return (
     <>
-      <section>
+      <section className="row">
         <label htmlFor="price" className="form-h-l-s">
           Search
         </label>

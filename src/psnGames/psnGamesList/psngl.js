@@ -35,16 +35,22 @@ function Psngl({ ItemsBest, BestGameId, filterPosts }) {
               id={BGames.id}
               className={`best-games-chose ${BGames.platform}`}
             >
-              <div className="game-container">
+              <div className="game-containers">
                 <img
                   src={BGames.img}
                   className="img-test"
                   alt={BGames.gamename}
                 />
-                <div className="f-u-title">{BGames.gamename}</div>
-                <div className="f-u-country">{BGames.country}</div>
-                <span className="f-u-from">From</span>
-                <div className="f-u-price">{BGames.price} €</div>
+                <span>
+                  <span className="scale-top">
+                    <div className="f-u-title">{BGames.gamename}</div>
+                    <div className="f-u-country">{BGames.country}</div>
+                  </span>
+                  <span className="scale-pos">
+                    <span className="f-u-from">From</span>
+                    <div className="f-u-price">{BGames.price} €</div>
+                  </span>
+                </span>
               </div>
             </Link>
           </>

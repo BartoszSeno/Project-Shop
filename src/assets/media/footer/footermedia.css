@@ -1,0 +1,19 @@
+/* 200% */
+
+@media only screen and (max-width: 1097px) {
+  .information {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+
+/* 500% */
+
+@media only screen and (max-width: 479px) {
+  .pey-method {
+    font-size: 25px;
+  }
+}

@@ -1,18 +1,20 @@
 import Psngl from "./psnGamesList/psngl";
 import Footer from "../footer";
 import "../assets/shopmain.css";
+import "../assets/media/shop/shopmedia.css";
 
 function PSNGames({ ItemsBest, BestGameId, filterPosts }) {
   return (
     <>
-      <section className="shop-container">
-        <div className="shop-header-container">
+      <section className="shop-container psn-c">
+        <div className="shop-header-container psn-s-c">
           <Psngl
             ItemsBest={ItemsBest}
             BestGameId={BestGameId}
             filterPosts={filterPosts}
           />
         </div>
+        <section className="footer-span"></section>
         <Footer />
       </section>
     </>

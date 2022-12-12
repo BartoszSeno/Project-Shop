@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   float: left;
+  z-index: 1000;
 }
 
 .pey-method {

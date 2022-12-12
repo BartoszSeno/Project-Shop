@@ -6,13 +6,14 @@ function ComputerGames({ ItemsBest, BestGameId, filterPosts }) {
   return (
     <>
       <section className="shop-container">
-        <div className="shop-header-container">
+        <div className="shop-header-container pc-s-c">
           <Pcgl
             ItemsBest={ItemsBest}
             BestGameId={BestGameId}
             filterPosts={filterPosts}
           />
         </div>
+        <section className="footer-span"></section>
         <Footer />
       </section>
     </>

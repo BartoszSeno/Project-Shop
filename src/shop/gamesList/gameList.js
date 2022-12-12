@@ -25,16 +25,22 @@ function GameShopList({ ItemsBest, BestGameId, maxSee, filterPosts }) {
               id={bgames.id}
               className="best-games-chose"
             >
-              <div className="game-container">
+              <div className="game-containers">
                 <img
                   src={bgames.img}
                   className="img-test"
                   alt={bgames.gamename}
                 />
-                <div className="f-u-title">{bgames.gamename}</div>
-                <div className="f-u-country">{bgames.country}</div>
-                <span className="f-u-from">From</span>
-                <div className="f-u-price">{bgames.price} €</div>
+                <span>
+                  <span className="scale-top">
+                    <div className="f-u-title">{bgames.gamename}</div>
+                    <div className="f-u-country">{bgames.country}</div>
+                  </span>
+                  <span className="scale-pos">
+                    <span className="f-u-from">From</span>
+                    <div className="f-u-price">{bgames.price} €</div>
+                  </span>
+                </span>
               </div>
             </Link>
           </>
