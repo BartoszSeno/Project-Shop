@@ -2,9 +2,18 @@ import GameShopList from "./gamesList/gameList";
 import Footer from "../footer";
 import "../assets/shopmain.css";
 import { useState } from "react";
+import "../assets/media/shop/shopmedia.css";
 
 function ShopMain({ ItemsBest, BestGameId, filterPosts }) {
-  const [maxSee, setmaxSee] = useState(40);
+  const [maxSee, setmaxSee] = useState(20);
+
+  const loadMore = () => {
+    const delbut = document.querySelector(".button");
+
+    setmaxSee(maxSee + 20);
+
+    delbut.style.display = "none";
+  };
 
   return (
     <>
@@ -17,7 +26,11 @@ function ShopMain({ ItemsBest, BestGameId, filterPosts }) {
             filterPosts={filterPosts}
           />
         </div>
-        <section className="footer-span"></section>
+        <section className="button">
+          <button onClick={loadMore} className="load-more-game-list">
+            Load More!
+          </button>
+        </section>
         <Footer />
       </section>
     </>
