@@ -2,10 +2,9 @@ import GameShopList from "./gamesList/gameList";
 import Footer from "../footer";
 import "../assets/shopmain.css";
 import { useState } from "react";
-import "../assets/media/shop/shopmedia.css";
 
 function ShopMain({ ItemsBest, BestGameId, filterPosts }) {
-  const [maxSee, setmaxSee] = useState(20);
+  const [maxSee, setmaxSee] = useState(40);
 
   return (
     <>

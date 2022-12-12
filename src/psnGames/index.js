@@ -1,7 +1,6 @@
 import Psngl from "./psnGamesList/psngl";
 import Footer from "../footer";
 import "../assets/shopmain.css";
-import "../assets/media/shop/shopmedia.css";
 
 function PSNGames({ ItemsBest, BestGameId, filterPosts }) {
   return (
