@@ -1,6 +1,11 @@
 /* 110% */
 
 @media only screen and (max-width: 1919px) {
+  .f-y-container,
+  .game-show-list {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* 125% */
@@ -11,42 +16,11 @@
 /* 150% */
 
 @media only screen and (max-width: 1535px) {
-  .f-y-container,
-  .game-show-list {
-    width: 1270px;
-    height: 550px;
-  }
-
-  .game-show-list {
-    margin-top: -30px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .lol {
-    transform: scale(0.85);
-  }
 }
 
 /* 175% */
 
 @media only screen and (max-width: 1279px) {
-  .f-y-container,
-  .game-show-list {
-    width: 1050px;
-    overflow: hidden;
-  }
-
-  .game-show-list {
-    margin-top: -30px;
-    height: 400px;
-    flex-wrap: wrap;
-  }
-  .lol {
-    transform: scale(0.9);
-  }
   .f-y-title {
     font-size: 30px;
   }
@@ -55,12 +29,6 @@
 /* 200% */
 
 @media only screen and (max-width: 1097px) {
-  .f-y-container,
-  .game-show-list {
-    width: 1000px;
-    height: 1250px;
-    overflow: auto;
-  }
   .lol {
     height: 220px;
   }
@@ -133,19 +101,18 @@
   .game-containers {
     transform: scale(1.5);
   }
-  .f-y-container,
-  .game-show-list {
-    width: 1000px;
-    height: 1750px;
-  }
-  .lol {
-    padding-top: 50px;
-    height: 270px;
-  }
 }
 /* 250% */
 
 @media only screen and (max-width: 959px) {
+  .f-y-title {
+    width: 500px;
+    height: 80px;
+    text-align: center;
+  }
+  .game-show-list {
+    margin-bottom: 400px;
+  }
 }
 
 /* 300% */
@@ -155,13 +122,8 @@
   .game-containers {
     transform: scale(1.2);
   }
-  .f-y-container,
   .game-show-list {
-    height: 1400px;
-  }
-  .lol {
-    padding-top: 50px;
-    height: 200px;
+    margin-bottom: 20px;
   }
 }
 /* 400% */
@@ -170,14 +132,6 @@
   .game-container,
   .game-containers {
     transform: scale(0.9);
-  }
-  .f-y-container,
-  .game-show-list {
-    height: 1130px;
-  }
-  .lol {
-    padding-top: 50px;
-    height: 140px;
   }
 }
 
@@ -188,12 +142,10 @@
   .game-containers {
     transform: scale(0.74);
   }
-  .f-y-container,
-  .game-show-list {
-    height: 970px;
-  }
-  .lol {
-    padding-top: 50px;
-    height: 105px;
+  .f-y-title {
+    width: 350px;
+    height: 80px;
+    text-align: center;
+    font-size: 25px;
   }
 }

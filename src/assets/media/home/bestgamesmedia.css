@@ -13,8 +13,8 @@
 @media only screen and (max-width: 1535px) {
   .best-games-container,
   .b-g-c {
-    width: 1200px;
-    height: 970px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     margin-left: -10px;
     margin-left: -7px;
@@ -24,11 +24,6 @@
 /* 175% */
 
 @media only screen and (max-width: 1279px) {
-  .best-games-container,
-  .b-g-c {
-    width: 1080px;
-    height: 970px;
-  }
 }
 
 /* 200% */
@@ -36,11 +31,12 @@
 @media only screen and (max-width: 1097px) {
   .best-games-container,
   .b-g-c {
-    width: 1080px;
-    height: 3640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .b-g-c {
-    padding-top: 90px;
+    padding-top: 20px;
   }
   .best-games-chose {
     height: 350px;
@@ -49,14 +45,9 @@
 /* 250% */
 
 @media only screen and (max-width: 959px) {
-  .b-g-c,
-  .best-games-container {
-    width: 900px;
-    height: 3650px;
-  }
   .b-g-c {
-    margin-top: -250px;
-    margin-bottom: -600px;
+    margin-top: -210px;
+    margin-bottom: -160px;
   }
 
   .best-games-container {
@@ -71,19 +62,15 @@
 /* 300% */
 
 @media only screen and (max-width: 767px) {
-  .b-g-c,
-  .best-games-container {
-    width: 690px;
-    height: 3650px;
-  }
   .b-g-c {
     margin-top: 0px;
     margin-bottom: 0px;
   }
 
   .best-games-container {
-    margin-top: -400px;
-    margin-bottom: -460px;
+    margin-top: 0px;
+    margin-bottom: -70px;
+    height: 2180px;
   }
   .best-games-chose {
     height: 200px;
@@ -99,19 +86,13 @@
 /* 400% */
 
 @media only screen and (max-width: 639px) {
-  .b-g-c,
-  .best-games-container {
-    width: 690px;
-    height: 3650px;
-  }
   .b-g-c {
     margin-top: 0px;
     margin-bottom: 0px;
   }
 
   .best-games-container {
-    margin-top: -770px;
-    margin-bottom: -800px;
+    height: 1650px;
   }
   .best-games-chose {
     height: 200px;
@@ -127,10 +108,8 @@
 /* 500% */
 
 @media only screen and (max-width: 479px) {
-  .b-g-c,
-  .best-games-container {
-    width: 690px;
-    height: 3650px;
+  .best-g-title {
+    margin-bottom: 70px;
   }
   .b-g-c {
     margin-top: 0px;
@@ -138,8 +117,7 @@
   }
 
   .best-games-container {
-    margin-top: -930px;
-    margin-bottom: -1000px;
+    height: 1330px;
   }
   .best-games-chose {
     height: 10px;
