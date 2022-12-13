@@ -61,9 +61,9 @@ function ShowGame({ Items, handleDelete }) {
           <Link
             to={item.url}
             onClick={(e) => handleDelete(item.id)}
-            className="lol"
+            className="best-games-chose"
           >
-            <div className="game-container top-g" id={item.id}>
+            <div className="game-containers top-g" id={item.id}>
               <img src={item.img} className="img-test" alt="" />
               <span>
                 <span className="scale-top">

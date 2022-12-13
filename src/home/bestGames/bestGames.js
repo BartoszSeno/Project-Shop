@@ -20,7 +20,7 @@ function BestGames({ ItemsBest, BestGameId }) {
                 id={BGames.id}
                 className="best-games-chose"
               >
-                <div className="game-container">
+                <div className="game-containers">
                   <img
                     src={BGames.img}
                     className="img-test"
