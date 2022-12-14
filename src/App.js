@@ -1,7 +1,5 @@
 import Header from "./header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Ps from "./header/ps/ps";
-import Pc from "./header/pc/pc";
 import Cart from "./header/cart/cart";
 import Home from "./home";
 import ShopMain from "./shop";
@@ -109,6 +107,7 @@ function App() {
       return postName.includes(query);
     });
   };
+
   return (
     <>
       <BrowserRouter>

@@ -38,7 +38,9 @@ function GameShopList({ ItemsBest, BestGameId, maxSee, filterPosts }) {
                   </span>
                   <span className="scale-pos">
                     <span className="f-u-from">From</span>
-                    <div className="f-u-price">{bgames.price} €</div>
+                    <div className="f-u-price" id={bgames.price}>
+                      {bgames.price} €
+                    </div>
                   </span>
                 </span>
               </div>
