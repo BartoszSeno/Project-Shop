@@ -27,7 +27,7 @@ function GameShopList({
         {filteredPosts.map((bgames) => (
           <>
             <Link
-              to={bgames.url}
+              to={`../${bgames.url}`}
               onClick={(e) => BestGameId(bgames.id)}
               id={bgames.id}
               className="best-games-chose"

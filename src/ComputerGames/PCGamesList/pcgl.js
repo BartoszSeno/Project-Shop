@@ -22,7 +22,7 @@ function Pcgl({ ItemsBest, BestGameId, filterPosts }) {
         {filteredPosts.map((BGames) => (
           <>
             <Link
-              to={BGames.url}
+              to={`../${BGames.url}`}
               onClick={(e) => BestGameId(BGames.id)}
               id={BGames.id}
               className={`best-games-chose ${BGames.platform}`}
