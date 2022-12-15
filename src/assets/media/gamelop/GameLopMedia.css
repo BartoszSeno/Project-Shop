@@ -168,13 +168,41 @@
     width: 100%;
     font-size: 33px;
   }
+
   .info-g-l {
     margin-top: 950px;
   }
-
+  /*description*/
+  .img-g-l-container {
+    margin-left: 200px;
+    width: 500px;
+  }
+  .description {
+    width: 500px;
+    margin-left: 0px;
+  }
+  .textarea {
+    width: 500px;
+    margin-left: 0px;
+  }
+  /*country adn platform*/
+  .info-g-l {
+    margin-top: 970px;
+    margin-left: -30px;
+  }
+  .c-d,
+  .p-d {
+    font-size: 30px;
+  }
+  .c-t,
+  .p-t {
+    font-size: 40px;
+  }
+  /*buy*/
   .buy-s {
-    margin-top: 1080px;
-    margin-left: 140px;
+    margin-top: 1020px;
+    margin-left: 280px;
+    transform: scale(1);
   }
 }
 /* 400% */
@@ -193,14 +221,14 @@
   .game-title {
     margin: 0;
     margin-top: -120px;
-    margin-left: -35px;
+    margin-left: 195px;
     text-align: center;
     width: 500px;
     word-wrap: break-word;
   }
   /*description*/
   .img-g-l-container {
-    margin-left: -38px;
+    margin-left: 190px;
     width: 500px;
   }
   .description {
@@ -225,56 +253,13 @@
   /*byu*/
   .buy-s {
     margin-top: 1080px;
-    margin-left: 60px;
+    margin-left: 290px;
   }
 }
 
 /* 500% */
 
 @media only screen and (max-width: 479px) {
-  .main-g-l,
-  .g-s-c {
-    padding-top: 140px;
-    height: 1550px;
-  }
-  .game-loop-page-container {
-    margin-top: -150px;
-  }
-
-  /*title*/
-  .game-title {
-    margin: 0;
-    margin-top: -120px;
-    margin-left: -35px;
-    text-align: center;
-    width: 390px;
-    word-wrap: break-word;
-  }
-  /*image*/
-  .img-g-l-main {
-    margin-left: -105px;
-  }
-  .img-g-l-main img {
-    transform: scale(0.9);
-  }
-  /*description*/
-
-  .img-g-l-container {
-    margin-left: -38px;
-    width: 500px;
-  }
-  .description {
-    width: 500px;
-    margin-left: 0px;
-    font-size: 30px;
-  }
-  .textarea {
-    width: 350px;
-    margin-left: 0px;
-    font-size: 30px;
-  }
-  /*country adn platform*/
-
   .c-d,
   .p-d {
     font-size: 30px;
@@ -283,11 +268,7 @@
   .p-t {
     font-size: 40px;
   }
-
-  /*byu*/
   .buy-s {
-    margin-top: 1080px;
-    margin-left: 14px;
-    transform: scale(1);
+    margin-top: 1030px;
   }
 }

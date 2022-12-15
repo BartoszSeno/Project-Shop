@@ -6,7 +6,6 @@ import ShopMain from "./shop";
 import { useState } from "react";
 import { useEffect } from "react";
 import apiRequest from "./assets/apiRequest";
-import GameLoopPage from "./GameLoopPage/GameLoopPage";
 import BestGameLoopPage from "./BestGameLoopPage/GameLoopPage";
 import ComputerGames from "./ComputerGames";
 import PSNGames from "./psnGames";
