@@ -24,7 +24,7 @@ function Header() {
       <nav className="main-header">
         <section className="upper-header">
           <div className="u-h-c">
-            <Link to="/" onClick={refresh}>
+            <Link to="/Project-Shop/" onClick={refresh}>
               <Logo />
             </Link>
             <Currency />
@@ -32,16 +32,16 @@ function Header() {
         </section>
         <section className="lower-header">
           <div className="l-h-c">
-            <Link to="/Shop" onClick={refresh}>
+            <Link to="/Project-Shop/Shop" onClick={refresh}>
               <Shop />
             </Link>
-            <Link to="/Pc" onClick={refresh}>
+            <Link to="/Project-Shop/Pc" onClick={refresh}>
               <Pc />
             </Link>
-            <Link to="/PS" onClick={refresh}>
+            <Link to="/Project-Shop/PS" onClick={refresh}>
               <Ps />
             </Link>
-            <Link to="/Cart" className="cart-container">
+            <Link to="/Project-Shop/Cart" className="cart-container">
               <Cart />
             </Link>
           </div>
