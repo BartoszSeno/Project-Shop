@@ -9,6 +9,7 @@ import apiRequest from "./assets/apiRequest";
 import BestGameLoopPage from "./BestGameLoopPage/GameLoopPage";
 import ComputerGames from "./ComputerGames";
 import PSNGames from "./psnGames";
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   // script for data file from .json
@@ -83,6 +84,7 @@ function App() {
   return (
     <>
       <BrowserRouter basename="/Project-Shop">
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route
