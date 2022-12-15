@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "../../assets/bestGame.css";
 import "../../assets/media/home/mainmedia.css";
-import "../../assets/media/home/bestgamesmedia.css";
 
 function BestGames({ ItemsBest, BestGameId }) {
   const maxSee = 10;

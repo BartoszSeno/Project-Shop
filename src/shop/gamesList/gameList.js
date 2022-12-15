@@ -2,7 +2,13 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import ShopHeader from "../homeHeader/header";
 
-function GameShopList({ ItemsBest, BestGameId, maxSee, filterPosts }) {
+function GameShopList({
+  ItemsBest,
+  BestGameId,
+  maxSee,
+  filterPosts,
+  filterPrice,
+}) {
   //search bar
   //max count of display (ItemBest - data .json)
   const slice = ItemsBest.slice(0, maxSee);
@@ -12,6 +18,7 @@ function GameShopList({ ItemsBest, BestGameId, maxSee, filterPosts }) {
   const query = new URLSearchParams(search).get("");
   const [searchQuery, setSearchQuery] = useState(query || "");
   const filteredPosts = filterPosts(slice, searchQuery);
+  //script for search Price
 
   return (
     <>

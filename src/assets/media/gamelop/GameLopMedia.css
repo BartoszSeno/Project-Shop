@@ -33,7 +33,7 @@
 @media only screen and (max-width: 1535px) {
   .game-loop-page-container {
     transform: scale(0.8);
-    margin-top: 66px;
+    margin-top: 58px;
     height: 100%;
   }
   .buy-s {
@@ -44,16 +44,30 @@
   .price-c {
     height: 80px;
   }
+  .game-title {
+    width: 650px;
+  }
 }
 
 /* 175% */
 
 @media only screen and (max-width: 1279px) {
+  .buy-s {
+    margin-left: 750px;
+    margin-top: 470px;
+  }
+  .game-title {
+    width: 550px;
+  }
 }
 
 /* 200% */
 
 @media only screen and (max-width: 1097px) {
+  .game-title {
+    width: 900px;
+    align-items: center;
+  }
   .main-g-l,
   .g-s-c {
     height: 1450px;
@@ -132,12 +146,36 @@
     text-align: center;
     justify-content: center;
     width: 100%;
+    margin-left: -20px;
+  }
+  /*buy*/
+  .price-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+  }
+  .buy-s {
+    margin-top: 950px;
+    margin-left: 200px;
   }
 }
 
 /* 300% */
 
 @media only screen and (max-width: 767px) {
+  .game-title {
+    width: 100%;
+    font-size: 33px;
+  }
+  .info-g-l {
+    margin-top: 950px;
+  }
+
+  .buy-s {
+    margin-top: 1080px;
+    margin-left: 140px;
+  }
 }
 /* 400% */
 
@@ -155,20 +193,23 @@
   .game-title {
     margin: 0;
     margin-top: -120px;
-    margin-left: 145px;
+    margin-left: -35px;
     text-align: center;
-    width: 600px;
+    width: 500px;
     word-wrap: break-word;
   }
   /*description*/
-
+  .img-g-l-container {
+    margin-left: -38px;
+    width: 500px;
+  }
   .description {
-    width: 700px;
-    margin-left: 70px;
+    width: 500px;
+    margin-left: 0px;
   }
   .textarea {
-    width: 700px;
-    margin-left: 70px;
+    width: 500px;
+    margin-left: 0px;
   }
   /*country adn platform*/
 
@@ -180,6 +221,12 @@
   .p-t {
     font-size: 50px;
   }
+
+  /*byu*/
+  .buy-s {
+    margin-top: 1080px;
+    margin-left: 60px;
+  }
 }
 
 /* 500% */
@@ -188,40 +235,59 @@
   .main-g-l,
   .g-s-c {
     padding-top: 140px;
-    height: 1650px;
+    height: 1550px;
   }
   .game-loop-page-container {
-    margin-top: -160px;
+    margin-top: -150px;
   }
 
   /*title*/
   .game-title {
-    margin-left: 190px;
-    width: 500px;
+    margin: 0;
+    margin-top: -120px;
+    margin-left: -35px;
+    text-align: center;
+    width: 390px;
+    word-wrap: break-word;
+  }
+  /*image*/
+  .img-g-l-main {
+    margin-left: -105px;
+  }
+  .img-g-l-main img {
+    transform: scale(0.9);
   }
   /*description*/
 
+  .img-g-l-container {
+    margin-left: -38px;
+    width: 500px;
+  }
   .description {
     width: 500px;
-    margin-left: 160px;
+    margin-left: 0px;
+    font-size: 30px;
   }
   .textarea {
-    width: 500px;
-    margin-left: 160px;
+    width: 350px;
+    margin-left: 0px;
+    font-size: 30px;
   }
   /*country adn platform*/
-  .info-g-l {
-    margin-top: 950px;
+
+  .c-d,
+  .p-d {
+    font-size: 30px;
   }
-  /*buy*/
+  .c-t,
+  .p-t {
+    font-size: 40px;
+  }
+
+  /*byu*/
   .buy-s {
-    margin-top: 1100px;
-  }
-  .price-c {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    margin-top: 1080px;
+    margin-left: 14px;
+    transform: scale(1);
   }
 }

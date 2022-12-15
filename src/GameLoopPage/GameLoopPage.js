@@ -4,6 +4,7 @@ import Platform from "./platform/platform";
 import BuyGL from "./buy/buy";
 import Description from "./description/description";
 import Title from "./title/title";
+import "../assets/media/home/bestgamesmedia.css";
 
 function GameLoopPage({ Items }) {
   return (

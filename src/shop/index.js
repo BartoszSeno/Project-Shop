@@ -4,7 +4,7 @@ import "../assets/shopmain.css";
 import { useState } from "react";
 import "../assets/media/shop/shopmedia.css";
 
-function ShopMain({ ItemsBest, BestGameId, filterPosts }) {
+function ShopMain({ ItemsBest, BestGameId, filterPosts, filterPrice }) {
   const [maxSee, setmaxSee] = useState(20);
 
   const loadMore = () => {
@@ -24,6 +24,7 @@ function ShopMain({ ItemsBest, BestGameId, filterPosts }) {
             BestGameId={BestGameId}
             maxSee={maxSee}
             filterPosts={filterPosts}
+            filterPrice={filterPrice}
           />
         </div>
         <section className="button">

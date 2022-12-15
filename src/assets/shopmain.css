@@ -15,9 +15,25 @@
 }
 .shop-header-container {
   width: 1379px;
+  display: flex;
+  flex-direction: column;
 }
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.form-h-l-s {
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+}
+.search-shop {
+  width: 400px !important;
+}
+
 .shop-header-container-t {
-  width: 300px;
+  width: 100%;
   display: flex;
   justify-content: center;
 }

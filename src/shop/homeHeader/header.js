@@ -1,4 +1,3 @@
-import Option from "./option/option";
 import ShopNavSearch from "../search/search";
 
 function ShopHeader({ searchQuery, setSearchQuery }) {
@@ -10,15 +9,6 @@ function ShopHeader({ searchQuery, setSearchQuery }) {
             searchQuery={searchQuery}
             setSearchQuery={setSearchQuery}
           />
-          <label htmlFor="price" className="form-h-l-p">
-            Price
-          </label>
-          <section className="section-price">
-            <input type="number" className="price" />
-            <span className="betwen-price">-</span>
-            <input type="number" className="price" />
-          </section>
-          <Option />
         </form>
       </aside>
     </>

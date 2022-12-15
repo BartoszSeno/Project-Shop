@@ -96,7 +96,7 @@ function App() {
     setTimeout(() => fetchItemsBest(), 0);
   }, []);
 
-  // filter data from .json for search bar
+  // filter Search data from .json for search bar
   const filterPosts = (slice, query) => {
     if (!query) {
       return slice;
@@ -105,6 +105,18 @@ function App() {
     return slice.filter((bgames) => {
       const postName = bgames.gamename.toLowerCase();
       return postName.includes(query);
+    });
+  };
+
+  // filter Price data from .json for search bar
+  const filterPrice = (slice, query) => {
+    if (!query) {
+      return slice;
+    }
+
+    return slice.filter((bgames) => {
+      const postPrice = bgames.price.toLowerCase();
+      return postPrice.includes(query);
     });
   };
 
@@ -132,6 +144,7 @@ function App() {
                 ItemsBest={ItemsBest}
                 BestGameId={BestGameId}
                 filterPosts={filterPosts}
+                filterPrice={filterPrice}
               />
             }
           ></Route>
