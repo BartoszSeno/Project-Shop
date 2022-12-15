@@ -18,7 +18,7 @@ function Pcgl({ ItemsBest, BestGameId, filterPosts }) {
   return (
     <>
       <ShopHeader searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      <main className="g-l-c" onLoad={HidePSN()}>
+      <main className="g-l-c" onLoad={HidePSN}>
         {filteredPosts.map((BGames) => (
           <>
             <Link
