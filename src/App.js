@@ -13,52 +13,13 @@ import PSNGames from "./psnGames";
 
 function App() {
   // script for data file from .json
-  const API_URL = "http://localhost:3600/gamesList";
-
-  const [Items, setItems] = useState([]);
-
-  // colect id .json file
-  const addItem = async (name) => {
-    const id = Items.length ? Items[Items.length - 1].id + 1 : 1;
-    const myNewItems = { id, name };
-    const listItems = [...Items, myNewItems];
-    setItems(listItems);
-
-    const postOptions = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(myNewItems),
-    };
-    const result = await apiRequest(API_URL, postOptions);
-  };
-
-  // individual id
-  const handleDelete = async (id) => {
-    const listItems = Items.filter((name) => name.id === id);
-    setItems(listItems);
-  };
-
-  useEffect(() => {
-    const fetchItems = async () => {
-      try {
-        const response = await fetch(API_URL);
-        if (!response.ok);
-        const listItems = await response.json();
-        setItems(listItems);
-      } catch (err) {}
-    };
-
-    setTimeout(() => fetchItems(), 0);
-  }, []);
-
   // brst games
   // colect id .json file
 
   const [ItemsBest, setItemsBest] = useState([]);
 
-  const API_URL_B = "http://localhost:3600/best-games";
+  const API_URL_B =
+    "https://my-json-server.typicode.com/BartoszSeno/jsonapi/best-games";
   // colect id .json file
 
   const BestGame = async (name) => {
@@ -127,14 +88,7 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={
-              <Home
-                Items={Items}
-                handleDelete={handleDelete}
-                ItemsBest={ItemsBest}
-                BestGameId={BestGameId}
-              />
-            }
+            element={<Home ItemsBest={ItemsBest} BestGameId={BestGameId} />}
           ></Route>
           <Route path="/Cart" element={<Cart />}></Route>
           <Route
@@ -168,12 +122,6 @@ function App() {
               />
             }
           ></Route>
-          {Items.map((item) => (
-            <Route
-              path={item.url}
-              element={<GameLoopPage Items={Items} />}
-            ></Route>
-          ))}
           {ItemsBest.map((BGames) => (
             <Route
               path={BGames.url}

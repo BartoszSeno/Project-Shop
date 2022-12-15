@@ -5,12 +5,12 @@ import BestGames from "./bestGames/bestGames";
 import Footer from "../footer";
 import "../assets/media/home/mainmedia.css";
 
-function Home({ Items, handleDelete, ItemsBest, BestGameId }) {
+function Home({ ItemsBest, BestGameId }) {
   return (
     <>
       <main className="home-container">
         <Baner />
-        <ForYou Items={Items} handleDelete={handleDelete} />
+        <ForYou ItemsBest={ItemsBest} BestGameId={BestGameId} />
         <BestGames ItemsBest={ItemsBest} BestGameId={BestGameId} />
         <Footer />
       </main>

@@ -1,6 +1,6 @@
 import ShowGame from "./showGames/showgame";
 
-function ForYou({ Items, handleDelete }) {
+function ForYou({ ItemsBest, BestGameId }) {
   return (
     <>
       <section className="f-y-container">
@@ -8,7 +8,7 @@ function ForYou({ Items, handleDelete }) {
           Video games for Computer and PlayStation - best prices on ZERO!
         </p>
         <div className="game-show-list">
-          <ShowGame Items={Items} handleDelete={handleDelete} />
+          <ShowGame ItemsBest={ItemsBest} BestGameId={BestGameId} />
         </div>
       </section>
     </>

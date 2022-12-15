@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function ShowGame({ Items, handleDelete }) {
+function ShowGame({ ItemsBest, BestGameId }) {
   function getRandomInt(max) {
     return Math.floor(Math.random() * max) + 1;
   }
-  const randomArrayNumber = getRandomInt(Items.length);
+  const randomArrayNumber = getRandomInt(ItemsBest.length);
 
   const [isActive, setisActive] = useState(false);
 
@@ -54,13 +54,17 @@ function ShowGame({ Items, handleDelete }) {
     }, 5000);
   });
 
+  const maxSee = 5;
+
+  const slice = ItemsBest.slice(0, maxSee);
+
   return (
     <>
-      {Items.map((item) => (
+      {slice.map((item) => (
         <>
           <Link
             to={item.url}
-            onClick={(e) => handleDelete(item.id)}
+            onClick={(e) => BestGameId(item.id)}
             className="best-games-chose"
           >
             <div className="game-containers top-g" id={item.id}>
