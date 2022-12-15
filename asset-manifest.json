@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Project-Shop/static/css/main.c44b9f37.css",
-    "main.js": "/Project-Shop/static/js/main.7ee8dc11.js",
+    "main.js": "/Project-Shop/static/js/main.86b34e9e.js",
     "static/media/baner.png": "/Project-Shop/static/media/baner.3b63636db4778685de05.png",
     "static/media/daysgone.jpg": "/Project-Shop/static/media/daysgone.b6a02b0ba4c73291a6a1.jpg",
     "static/media/spider.jpg": "/Project-Shop/static/media/spider.511b483bc50fffb4b4f3.jpg",
@@ -9,10 +9,10 @@
     "static/media/TangoSans_Italic.ttf": "/Project-Shop/static/media/TangoSans_Italic.222be008d145414f08ab.ttf",
     "index.html": "/Project-Shop/index.html",
     "main.c44b9f37.css.map": "/Project-Shop/static/css/main.c44b9f37.css.map",
-    "main.7ee8dc11.js.map": "/Project-Shop/static/js/main.7ee8dc11.js.map"
+    "main.86b34e9e.js.map": "/Project-Shop/static/js/main.86b34e9e.js.map"
   },
   "entrypoints": [
     "static/css/main.c44b9f37.css",
-    "static/js/main.7ee8dc11.js"
+    "static/js/main.86b34e9e.js"
   ]
 }
