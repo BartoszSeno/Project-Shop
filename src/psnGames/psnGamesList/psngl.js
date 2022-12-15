@@ -26,7 +26,7 @@ function Psngl({ ItemsBest, BestGameId, filterPosts }) {
   return (
     <>
       <ShopHeader searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      <main className="g-l-c" onLoad={HidePC()}>
+      <main className="g-l-c" onLoad={HidePC}>
         {filteredPosts.map((BGames) => (
           <>
             <Link

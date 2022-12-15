@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../../assets/bestGame.css";
+import "../../assets/media/home/bestgamesmedia.css";
 import "../../assets/media/home/mainmedia.css";
 
 function BestGames({ ItemsBest, BestGameId }) {
