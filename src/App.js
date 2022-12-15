@@ -122,7 +122,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter basename="/Project-Shop">
+      <BrowserRouter>
         <Header />
         <Routes>
           <Route
