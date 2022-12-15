@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Project-Shop/static/css/main.fc041841.css",
+    "main.css": "/Project-Shop/static/css/main.5cbc7804.css",
     "main.js": "/Project-Shop/static/js/main.5597e67d.js",
     "static/media/baner.png": "/Project-Shop/static/media/baner.3b63636db4778685de05.png",
     "static/media/daysgone.jpg": "/Project-Shop/static/media/daysgone.b6a02b0ba4c73291a6a1.jpg",
@@ -8,11 +8,11 @@
     "static/media/horizon.png": "/Project-Shop/static/media/horizon.529c4065e8be78b95b4f.png",
     "static/media/TangoSans_Italic.ttf": "/Project-Shop/static/media/TangoSans_Italic.222be008d145414f08ab.ttf",
     "index.html": "/Project-Shop/index.html",
-    "main.fc041841.css.map": "/Project-Shop/static/css/main.fc041841.css.map",
+    "main.5cbc7804.css.map": "/Project-Shop/static/css/main.5cbc7804.css.map",
     "main.5597e67d.js.map": "/Project-Shop/static/js/main.5597e67d.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc041841.css",
+    "static/css/main.5cbc7804.css",
     "static/js/main.5597e67d.js"
   ]
 }
