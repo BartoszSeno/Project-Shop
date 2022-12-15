@@ -14,7 +14,7 @@ function BestGames({ ItemsBest, BestGameId }) {
           {slice.map((BGames) => (
             <>
               <Link
-                to={`/Project-Shop/ ${BGames.url}`}
+                to={BGames.url}
                 onClick={(e) => BestGameId(BGames.id)}
                 id={BGames.id}
                 className="best-games-chose"
