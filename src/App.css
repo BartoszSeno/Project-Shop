@@ -21,3 +21,7 @@ html {
   font-family: FontTango;
   src: url(assets/font/TangoSans_Italic.ttf);
 }
+
+.scroll-to-top {
+  z-index: 10000;
+}
